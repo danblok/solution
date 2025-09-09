@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en" class="wa-cloak">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link -->
+    <!--   rel="stylesheet" -->
+    <!--   href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" -->
+    <!--   integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" -->
+    <!--   crossorigin="anonymous" -->
+    <!-- /> -->
+    <!-- <script -->
+    <!--   src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" -->
+    <!--   integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" -->
+    <!--   crossorigin="anonymous" -->
+    <!-- ></script> -->
+    <script
+      src="node_modules/jquery/dist/jquery.slim.min.js"
+      type="module"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="/node_modules/@awesome.me/webawesome/dist/webawesome.js"
+    ></script>
+    <script
+      type="module"
+      src="/node_modules/@awesome.me/webawesome/dist/webawesome.loader.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="/node_modules/@awesome.me/webawesome/dist/styles/utilities.css"
+    />
+    <script
+      type="module"
+      src="/node_modules/slick-carousel/slick/slick.min.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="/node_modules/slick-carousel/slick/slick.css"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Яндекс Отзывы</title>
+  </head>
+  <body style="max-width: 1920px">
+    <main>
+      <section class="hero">
+        <div class="page-container">
+          <div class="hero-wrapper">
+            <wa-breadcrumb class="breadcrumb">
+              <span slot="separator" class="breadcrumb__separator">/</span>
+              <wa-breadcrumb-item class="breadcrumb__item">
+                Главная
+              </wa-breadcrumb-item>
+              <wa-breadcrumb-item class="breadcrumb__item">
+                Готовые решения для сайта
+              </wa-breadcrumb-item>
+            </wa-breadcrumb>
+            <div class="hero__header">
+              <h1 class="hero__header__title">
+                Отзывы на сайт с Яндекс Карт на 1С-Битрикс
+              </h1>
+              <p class="hero__header__desc">
+                Публикуйте на своём сайте лучшие отзывы о ваших услугах из
+                Яндекс.Карт, чтобы подчеркнуть свою надёжность и качество.
+              </p>
+            </div>
+            <img
+              class="hero__img"
+              src="src/images/hero_img.svg"
+              alt="Hero img"
+            />
+            <div class="hero__footer">
+              <div class="hero__footer__btns">
+                <button class="btn--blue">Купить</button>
+                <button class="btn--red">Попробовать 7 дней</button>
+              </div>
+              <a href="" class="hero__footer__check-site">
+                Смотреть демо-сайт
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <wa-tab-group class="tab-group" active="description">
+        <wa-tab panel="description" class="tab">Описание</wa-tab>
+        <wa-tab panel="opportunities" class="tab">Возможности модуля</wa-tab>
+        <wa-tab panel="instruction" class="tab">Инструкция по установке</wa-tab>
+        <wa-tab panel="parameters" class="tab">Тех.параметры</wa-tab>
+        <wa-tab panel="support" class="tab">Тех.поддержка</wa-tab>
+        <wa-tab panel="faq" class="tab">Частые вопросы</wa-tab>
+
+        <wa-tab-panel class="tab-panel" name="description">
+          <section class="advantages">
+            <div class="page-container">
+              <h2 class="advantages__title">
+                <span class="advantages__title--highlight">
+                  Зачем нужны отзывы
+                </span>
+                <br />
+                с 2ГИС на вашем сайте?
+              </h2>
+              <p class="advantages__desc">
+                Этот модуль поможет вам вывести ваш сайт на новый уровень,
+                создавая более доверительные отношения с клиентами и улучшая
+                позиции в поисковых системах.
+              </p>
+              <div
+                class="wa-grid advantages__list"
+                style="--min-column-size: 555px"
+              >
+                <wa-card class="advantages__card">
+                  <wa-icon
+                    class="advantages__card__icon"
+                    src="src/images/adv_1.svg"
+                  ></wa-icon>
+                  <div class="advantages__card__content">
+                    <h3 class="advantages__card__title">Увеличение продаж</h3>
+                    <p class="advantages__card__text">
+                      Отзывы реальных клиентов — это мощное подтверждение
+                      качества ваших услуг или товаров. Они помогают убедить
+                      потенциальных клиентов в правильности выбора, стимулируя
+                      новые покупки.
+                    </p>
+                  </div>
+                </wa-card>
+                <wa-card class="advantages__card">
+                  <wa-icon
+                    class="advantages__card__icon"
+                    src="src/images/adv_2.svg"
+                  ></wa-icon>
+                  <div class="advantages__card__content">
+                    <h3 class="advantages__card__title">
+                      Стимулирование получения новых отзывов
+                    </h3>
+                    <p class="advantages__card__text">
+                      Показывая отзывы на сайте, вы мотивируете текущих клиентов
+                      делиться своим мнением, что повышает доверие и помогает
+                      привлекать новую аудиторию.
+                    </p>
+                  </div>
+                </wa-card>
+                <wa-card class="advantages__card">
+                  <wa-icon
+                    class="advantages__card__icon"
+                    src="src/images/adv_3.svg"
+                  ></wa-icon>
+                  <div class="advantages__card__content">
+                    <h3 class="advantages__card__title">
+                      Улучшение позиций в поисковых системах
+                    </h3>
+                    <p class="advantages__card__text">
+                      Отзывы способствуют повышению активности на сайте, что
+                      улучшает его видимость и ранжирование в поисковых
+                      системах.
+                    </p>
+                  </div>
+                </wa-card>
+                <wa-card class="advantages__card">
+                  <wa-icon
+                    class="advantages__card__icon"
+                    src="src/images/adv_4.svg"
+                  ></wa-icon>
+                  <div class="advantages__card__content">
+                    <h3 class="advantages__card__title">
+                      Подтверждение подлинности отзывов
+                    </h3>
+                    <p class="advantages__card__text">
+                      Посетители вашего сайта могут перейти на страницу автора
+                      отзыва в Яндекс.Картах, чтобы убедиться в его подлинности.
+                    </p>
+                  </div>
+                </wa-card>
+                <wa-card class="advantages__card">
+                  <wa-icon
+                    class="advantages__card__icon"
+                    src="src/images/adv_5.svg"
+                  ></wa-icon>
+                  <div class="advantages__card__content">
+                    <h3 class="advantages__card__title">
+                      Кнопка «Оставить отзыв»
+                    </h3>
+                    <p class="advantages__card__text">
+                      Предоставьте своим клиентам возможность быстро оставить
+                      отзыв о вашей компании на Яндекс.Картах прямо с вашего
+                      сайта.
+                    </p>
+                  </div>
+                </wa-card>
+                <wa-card class="advantages__card">
+                  <wa-icon
+                    class="advantages__card__icon"
+                    src="src/images/adv_6.svg"
+                  ></wa-icon>
+                  <div class="advantages__card__content">
+                    <h3 class="advantages__card__title">
+                      Повышение доверия к вашему бизнесу
+                    </h3>
+                    <p class="advantages__card__text">
+                      Показывая отзывы на сайте, вы мотивируете текущих клиентов
+                      делиться своим мнением, что повышает доверие и помогает
+                      привлекать новую аудиторию.
+                    </p>
+                  </div>
+                </wa-card>
+              </div>
+            </div>
+          </section>
+          <section class="demo">
+            <div class="page-container">
+              <div class="demo-wrapper">
+                <div class="demo__header">
+                  <h2 class="demo__header__title">Попробуйте наш модуль</h2>
+                  <p class="demo__header__note">
+                    Бесплатно
+                    <br />
+                    <span class="demo__header__note--highlight">7 дней</span>
+                  </p>
+                </div>
+                <img
+                  src="src/images/demo_yandex.svg"
+                  alt="Demo"
+                  class="demo__img"
+                />
+                <div class="demo__footer">
+                  <p class="demo__footer__text">
+                    Проверьте функциональность модуля, его совместимость и
+                    отображение отзывов на вашем сайте.
+                  </p>
+
+                  <a
+                    href="https://marketplace.1c-bitrix.ru/solutions/leadspace.yandexreviewsslider/"
+                    class="btn--red"
+                  >
+                    Попробовать 7 дней
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="adaptive">
+            <div class="page-container">
+              <div class="adaptive-wrapper">
+                <h2 class="adaptive__title">
+                  Модуль адаптирован
+                  <br />
+                  <span class="adaptive__title--highlight"
+                    >под мобильную версию</span
+                  >
+                </h2>
+                <img
+                  src="src/images/adaptive_img.svg"
+                  alt="Adaptive"
+                  class="adaptive__img"
+                />
+                <div class="share">
+                  <div class="share__info">
+                    <h4 class="share__info__title">
+                      Не хватило функций или есть идеи по улучшению модуля
+                    </h4>
+                    <p class="share__info__desc">
+                      Напишите нам и получите скидку
+                    </p>
+                  </div>
+                  <div class="share__discount">
+                    <h4 class="share__discount__title">
+                      <span class="share__discount__title__highlight"
+                        >Скидка 5%</span
+                      >
+                      <br />
+                      на любой модуль
+                    </h4>
+                    <div class="share__discount__info">
+                      <button type="button" class="btn--blue">
+                        Предложить идею
+                        <img
+                          src="src/images/bulb.svg"
+                          alt="Bulb icon"
+                          class="share-btn__img"
+                        />
+                      </button>
+                      <p class="share__discount__info__desc">
+                        А мы реализуем ваш
+                        <br />
+                        запрос на новый модуль!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="form"></section>
+        </wa-tab-panel>
+        <wa-tab-panel class="tab-panel" name="opportunities">
+          This is the custom tab panel.
+        </wa-tab-panel>
+        <wa-tab-panel name="instruction" class="tab-panel">
+          This is the advanced tab panel.
+        </wa-tab-panel>
+        <wa-tab-panel name="parameters" class="tab-panel">
+          This is a disabled tab panel.
+        </wa-tab-panel>
+        <wa-tab-panel name="support" class="tab-panel">
+          This is a disabled tab panel.
+        </wa-tab-panel>
+        <wa-tab-panel name="faq" class="tab-panel">
+          <div class="wa-stack">
+            <wa-details
+              name="faq-group"
+              class="faq-item"
+              summary="Почему не работает импорт отзывов?"
+            >
+              <wa-icon
+                src="/src/images/plus.svg"
+                class="faq-icon"
+                slot="expand-icon"
+              ></wa-icon>
+              <wa-icon
+                src="/src/images/plus.svg"
+                class="faq-icon"
+                slot="collapse-icon"
+              ></wa-icon>
+              Проверьте, что ссылка или идентификатор были введены правильно, в
+              соответствии с инструкцией (3 пункт). Если указано все верно, но
+              импорт не работает, напишите нам в тех.поддержку.
+            </wa-details>
+
+            <wa-details
+              name="faq-group"
+              summary="Не прогружаются новые отзывы"
+              class="faq-item"
+            >
+              <wa-icon
+                src="/src/images/plus.svg"
+                class="faq-icon"
+                slot="expand-icon"
+              ></wa-icon>
+              <wa-icon
+                src="/src/images/plus.svg"
+                class="faq-icon"
+                slot="collapse-icon"
+              ></wa-icon>
+
+              Импорт отзывов происходит автоматически раз в 5 дней. Попробуйте
+              дождаться обновления. Если спустя время ничего не произошло,
+              обратитесь в тех.поддержку.
+            </wa-details>
+
+            <wa-details
+              name="faq-group"
+              class="faq-item"
+              summary="Можно ли удалить негативный отзыв?"
+            >
+              <wa-icon
+                src="/src/images/plus.svg"
+                class="faq-icon"
+                slot="expand-icon"
+              ></wa-icon>
+              <wa-icon
+                src="/src/images/plus.svg"
+                class="faq-icon"
+                slot="collapse-icon"
+              ></wa-icon>
+
+              Удалить негативный отзыв нельзя, но можно применить настройку
+              “Показывать только с оценкой 4 и 5”.
+            </wa-details>
+            <wa-details
+              class="faq-item"
+              name="faq-group"
+              summary="Почему в начале не отображаются последние добавленные отзывы?"
+            >
+              <wa-icon
+                src="/src/images/plus.svg"
+                class="faq-icon"
+                slot="expand-icon"
+              ></wa-icon>
+              <wa-icon
+                src="/src/images/plus.svg"
+                class="faq-icon"
+                slot="collapse-icon"
+              ></wa-icon>
+
+              Сортировка, которая присутствует в модуле, сортирует по тем
+              отзывам, которые взяты из раздела “по умолчанию” Яндекс.Карт. Мы
+              не можем повлиять на «первый отзыв во умолчанию», но вы можете!
+              Обратитесь к инструкции (6 пункт) .
+            </wa-details>
+            <wa-details
+              name="faq-group"
+              class="faq-item"
+              summary="Можно ли установить оба модуля отзывов на сайт?"
+            >
+              <wa-icon
+                src="/src/images/plus.svg"
+                class="faq-icon"
+                slot="expand-icon"
+              ></wa-icon>
+              <wa-icon
+                src="/src/images/plus.svg"
+                class="faq-icon"
+                slot="collapse-icon"
+              ></wa-icon>
+
+              Конечно! Если вы собираете отзывы с обеих площадок, то можно
+              установить оба модуля. Они схожи по дизайну и прекрасно сочетаются
+              рядом.
+            </wa-details>
+          </div>
+        </wa-tab-panel>
+      </wa-tab-group>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
