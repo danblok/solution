@@ -1,0 +1,138 @@
+.advantages {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-self: center;
+}
+
+.advantages__title,
+.advantages__title--highlight {
+	font-family: Open Sans;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 120%;
+	letter-spacing: 0%;
+}
+
+.advantages__title--highlight {
+	color: var(--dark-blue);
+}
+
+.advantages__desc {
+	font-family: Open Sans;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	letter-spacing: 0%;
+	color: var(--grey);
+	margin-top: 25px;
+	max-width: 747px;
+}
+
+.advantages__list.wa-grid {
+	gap: 30px;
+}
+
+.advantages__list {
+	margin-top: 50px;
+}
+
+.advantages__card {
+	border-radius: 10px;
+	padding: 21px 28px 45px 23px;
+	box-shadow: 0px 7px 30px 0px rgba(52, 87, 139, 0.15);
+}
+
+.advantages__card::part(body) {
+	display: flex;
+	flex-direction: row;
+	gap: 25px;
+	flex-wrap: nowrap;
+}
+
+.advantages__card__icon::part(svg) {
+	min-height: 50px;
+}
+.advantages__card__title {
+	font-family: Open Sans;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 125%;
+	letter-spacing: 0%;
+	color: var(--black);
+	max-width: 350px;
+}
+.advantages__card__text {
+	font-family: Open Sans;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 125%;
+	letter-spacing: 0%;
+	color: var(--grey);
+	margin-top: 15px;
+}
+
+@media screen and (max-width: 1140px) {
+	.advantages__title,
+	.advantages__title--highlight {
+		font-size: 30px;
+	}
+
+	.advantages__desc {
+		margin-top: 15px;
+	}
+
+	.advantages__list {
+		margin-top: 30px;
+		max-width: 350px;
+		display: block;
+		flex-direction: column;
+		position: relative;
+		box-shadow: 0px 7px 30px 0px rgba(52, 87, 139, 0.15);
+		border-radius: 10px;
+	}
+
+	.advantages__card {
+		padding: 19px 23px 42px 25px;
+		min-width: 345px;
+		box-shadow: none;
+	}
+
+	.advantages__card::part(body) {
+		display: flex;
+		flex-direction: column;
+		/* gap: 40px; */
+	}
+
+	.advantages__card__icon::part(svg) {
+		min-height: 40px;
+	}
+
+	.advantages__card__content {
+		margin-top: 20px;
+	}
+
+	.advantages__list .slick-prev,
+	.advantages__list .slick-next {
+		position: absolute;
+		width: 60px;
+		height: 60px;
+		bottom: -90px;
+		box-shadow: 0px 5px 15px 0px rgba(52, 87, 139, 0.2);
+		background-image: url("images/arrow_prev.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 12px auto;
+		color: transparent;
+		border: none;
+		cursor: pointer;
+		border-radius: 50%;
+		background-color: white;
+	}
+
+	.advantages__list .slick-next {
+		left: 90px;
+		rotate: 180deg;
+		box-shadow: 0px -5px 15px 0px rgba(52, 87, 139, 0.2);
+	}
+}

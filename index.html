@@ -16,35 +16,79 @@
     <!--   integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" -->
     <!--   crossorigin="anonymous" -->
     <!-- ></script> -->
-    <script
-      src="node_modules/jquery/dist/jquery.slim.min.js"
-      type="module"
-    ></script>
+    <!-- REMOTE START -->
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
     <script
-      type="module"
-      src="/node_modules/@awesome.me/webawesome/dist/webawesome.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.slim.min.js"
+      integrity="sha512-sNylduh9fqpYUK5OYXWcBleGzbZInWj8yCJAU57r1dpSK9tP2ghf/SRYCMj+KsslFkCOt3TvJrX2AV/Gc3wOqA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
     <script
+      src="https://early.webawesome.com/webawesome@3.0.0-beta.4/dist/webawesome.js"
       type="module"
-      src="/node_modules/@awesome.me/webawesome/dist/webawesome.loader.js"
+    ></script>
+    <script
+      src="https://early.webawesome.com/webawesome@3.0.0-beta.4/dist/webawesome.loader.js"
+      type="module"
     ></script>
     <link
       rel="stylesheet"
-      href="/node_modules/@awesome.me/webawesome/dist/styles/utilities.css"
+      href="https://early.webawesome.com/webawesome@3.0.0-beta.4/dist/styles/utilities.css"
     />
-    <script
-      type="module"
-      src="/node_modules/slick-carousel/slick/slick.min.js"
-    ></script>
     <link
       rel="stylesheet"
-      href="/node_modules/slick-carousel/slick/slick.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- REMOTE END -->
+    <!-- LOCAL START -->
+    <!-- <script -->
+    <!--   src="/node_modules/jquery/dist/jquery.slim.min.js" -->
+    <!--   type="module" -->
+    <!-- ></script> -->
+    <!-- <script -->
+    <!--   type="module" -->
+    <!--   src="/node_modules/@awesome.me/webawesome/dist/webawesome.js" -->
+    <!-- ></script> -->
+    <!-- <script -->
+    <!--   type="module" -->
+    <!--   src="/node_modules/@awesome.me/webawesome/dist/webawesome.loader.js" -->
+    <!-- ></script> -->
+    <!-- <link -->
+    <!--   rel="stylesheet" -->
+    <!--   href="/node_modules/@awesome.me/webawesome/dist/styles/utilities.css" -->
+    <!-- /> -->
+    <!-- <link -->
+    <!--   rel="stylesheet" -->
+    <!--   href="/node_modules/slick-carousel/slick/slick.css" -->
+    <!-- /> -->
+    <!-- <script -->
+    <!--   type="module" -->
+    <!--   src="/node_modules/slick-carousel/slick/slick.min.js" -->
+    <!-- ></script> -->
+    <!-- LOCAL END -->
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/advantages.css" />
+    <link rel="stylesheet" href="src/demo.css" />
+    <link rel="stylesheet" href="src/adaptive.css" />
+    <link rel="stylesheet" href="src/share.css" />
+    <link rel="stylesheet" href="src/features.css" />
+    <link rel="stylesheet" href="src/guide.css" />
+    <link rel="stylesheet" href="src/specs.css" />
+    <link rel="stylesheet" href="src/support.css" />
+    <link rel="stylesheet" href="src/faq.css" />
     <title>Яндекс Отзывы</title>
   </head>
   <body style="max-width: 1920px">
@@ -77,25 +121,41 @@
             />
             <div class="hero__footer">
               <div class="hero__footer__btns">
-                <button class="btn--blue">Купить</button>
-                <button class="btn--red">Попробовать 7 дней</button>
+                <a
+                  class="btn--blue"
+                  target="_blank"
+                  href="https://marketplace.1c-bitrix.ru/solutions/leadspace.yandexreviewsslider/"
+                >
+                  Купить
+                </a>
+                <a
+                  class="btn--red"
+                  target="_blank"
+                  href="https://marketplace.1c-bitrix.ru/solutions/leadspace.yandexreviewsslider/"
+                >
+                  Попробовать 7 дней
+                </a>
               </div>
-              <a href="" class="hero__footer__check-site">
+              <a
+                class="hero__footer__check-site"
+                href="_blank"
+                href="https://marketplace.1c-bitrix.ru/solutions/leadspace.yandexreviewsslider/"
+              >
                 Смотреть демо-сайт
               </a>
             </div>
           </div>
         </div>
       </section>
-      <wa-tab-group class="tab-group" active="description">
-        <wa-tab panel="description" class="tab">Описание</wa-tab>
-        <wa-tab panel="opportunities" class="tab">Возможности модуля</wa-tab>
-        <wa-tab panel="instruction" class="tab">Инструкция по установке</wa-tab>
-        <wa-tab panel="parameters" class="tab">Тех.параметры</wa-tab>
+      <wa-tab-group class="tab-group" active="desc">
+        <wa-tab panel="desc" class="tab">Описание</wa-tab>
+        <wa-tab panel="features" class="tab">Возможности модуля</wa-tab>
+        <wa-tab panel="guide" class="tab">Инструкция по установке</wa-tab>
+        <wa-tab panel="specs" class="tab">Тех.параметры</wa-tab>
         <wa-tab panel="support" class="tab">Тех.поддержка</wa-tab>
         <wa-tab panel="faq" class="tab">Частые вопросы</wa-tab>
 
-        <wa-tab-panel class="tab-panel" name="description">
+        <wa-tab-panel class="tab-panel" name="desc">
           <section class="advantages">
             <div class="page-container">
               <h2 class="advantages__title">
@@ -218,7 +278,6 @@
                   <h2 class="demo__header__title">Попробуйте наш модуль</h2>
                   <p class="demo__header__note">
                     Бесплатно
-                    <br />
                     <span class="demo__header__note--highlight">7 дней</span>
                   </p>
                 </div>
@@ -269,10 +328,9 @@
                   </div>
                   <div class="share__discount">
                     <h4 class="share__discount__title">
-                      <span class="share__discount__title__highlight"
-                        >Скидка 5%</span
-                      >
-                      <br />
+                      <span class="share__discount__title--highlight">
+                        Скидка 5%
+                      </span>
                       на любой модуль
                     </h4>
                     <div class="share__discount__info">
@@ -295,127 +353,813 @@
               </div>
             </div>
           </section>
-          <section class="form"></section>
         </wa-tab-panel>
-        <wa-tab-panel class="tab-panel" name="opportunities">
-          This is the custom tab panel.
-        </wa-tab-panel>
-        <wa-tab-panel name="instruction" class="tab-panel">
-          This is the advanced tab panel.
-        </wa-tab-panel>
-        <wa-tab-panel name="parameters" class="tab-panel">
-          This is a disabled tab panel.
-        </wa-tab-panel>
-        <wa-tab-panel name="support" class="tab-panel">
-          This is a disabled tab panel.
-        </wa-tab-panel>
-        <wa-tab-panel name="faq" class="tab-panel">
-          <div class="wa-stack">
-            <wa-details
-              name="faq-group"
-              class="faq-item"
-              summary="Почему не работает импорт отзывов?"
-            >
-              <wa-icon
-                src="/src/images/plus.svg"
-                class="faq-icon"
-                slot="expand-icon"
-              ></wa-icon>
-              <wa-icon
-                src="/src/images/plus.svg"
-                class="faq-icon"
-                slot="collapse-icon"
-              ></wa-icon>
-              Проверьте, что ссылка или идентификатор были введены правильно, в
-              соответствии с инструкцией (3 пункт). Если указано все верно, но
-              импорт не работает, напишите нам в тех.поддержку.
-            </wa-details>
-
-            <wa-details
-              name="faq-group"
-              summary="Не прогружаются новые отзывы"
-              class="faq-item"
-            >
-              <wa-icon
-                src="/src/images/plus.svg"
-                class="faq-icon"
-                slot="expand-icon"
-              ></wa-icon>
-              <wa-icon
-                src="/src/images/plus.svg"
-                class="faq-icon"
-                slot="collapse-icon"
-              ></wa-icon>
-
-              Импорт отзывов происходит автоматически раз в 5 дней. Попробуйте
-              дождаться обновления. Если спустя время ничего не произошло,
-              обратитесь в тех.поддержку.
-            </wa-details>
-
-            <wa-details
-              name="faq-group"
-              class="faq-item"
-              summary="Можно ли удалить негативный отзыв?"
-            >
-              <wa-icon
-                src="/src/images/plus.svg"
-                class="faq-icon"
-                slot="expand-icon"
-              ></wa-icon>
-              <wa-icon
-                src="/src/images/plus.svg"
-                class="faq-icon"
-                slot="collapse-icon"
-              ></wa-icon>
-
-              Удалить негативный отзыв нельзя, но можно применить настройку
-              “Показывать только с оценкой 4 и 5”.
-            </wa-details>
-            <wa-details
-              class="faq-item"
-              name="faq-group"
-              summary="Почему в начале не отображаются последние добавленные отзывы?"
-            >
-              <wa-icon
-                src="/src/images/plus.svg"
-                class="faq-icon"
-                slot="expand-icon"
-              ></wa-icon>
-              <wa-icon
-                src="/src/images/plus.svg"
-                class="faq-icon"
-                slot="collapse-icon"
-              ></wa-icon>
-
-              Сортировка, которая присутствует в модуле, сортирует по тем
-              отзывам, которые взяты из раздела “по умолчанию” Яндекс.Карт. Мы
-              не можем повлиять на «первый отзыв во умолчанию», но вы можете!
-              Обратитесь к инструкции (6 пункт) .
-            </wa-details>
-            <wa-details
-              name="faq-group"
-              class="faq-item"
-              summary="Можно ли установить оба модуля отзывов на сайт?"
-            >
-              <wa-icon
-                src="/src/images/plus.svg"
-                class="faq-icon"
-                slot="expand-icon"
-              ></wa-icon>
-              <wa-icon
-                src="/src/images/plus.svg"
-                class="faq-icon"
-                slot="collapse-icon"
-              ></wa-icon>
-
-              Конечно! Если вы собираете отзывы с обеих площадок, то можно
-              установить оба модуля. Они схожи по дизайну и прекрасно сочетаются
-              рядом.
-            </wa-details>
+        <wa-tab-panel class="tab-panel" name="features">
+          <div class="features">
+            <div class="page-container">
+              <h2 class="features__title">
+                <span class="features__title--highlight"
+                  >Возможности модуля</span
+                >
+                «Отзывы с Яндек.Карт на сайт»
+              </h2>
+              <div class="features__list">
+                <div class="features__list__item">
+                  <wa-icon
+                    class="features__list__item__icon"
+                    src="src/images/feature_1.svg"
+                  ></wa-icon>
+                  <div class="features__list__item__main">
+                    <div class="features__list__item__header">
+                      <h3 class="features__list__item__title">
+                        Простая установка
+                      </h3>
+                      <p class="features__list__item__desc">
+                        Модуль легко интегрируется на ваш сайт, не требуя
+                        специальных технических навыков
+                        <br />
+                        <br />
+                        Смотрите инструкцию по установке
+                      </p>
+                    </div>
+                  </div>
+                  <span class="features__list__item__num">1</span>
+                </div>
+                <div class="features__list__item">
+                  <wa-icon
+                    class="features__list__item__icon"
+                    src="src/images/feature_2.svg"
+                  ></wa-icon>
+                  <div class="features__list__item__main">
+                    <div class="features__list__item__header">
+                      <h3 class="features__list__item__title">
+                        Лёгкое добавление вашей организации
+                      </h3>
+                      <p class="features__list__item__desc">
+                        Укажите идентификатор вашей компании в Яндекс.Картах, и
+                        отзывы начнут отображаться на сайте.
+                      </p>
+                    </div>
+                    <img
+                      class="features__list__item__img"
+                      src="src/images/feature_img_2.svg"
+                      alt="Feature Image 2"
+                    />
+                  </div>
+                  <span class="features__list__item__num">2</span>
+                </div>
+                <div class="features__list__item">
+                  <wa-icon
+                    class="features__list__item__icon"
+                    src="src/images/feature_3.svg"
+                  ></wa-icon>
+                  <div class="features__list__item__main">
+                    <div class="features__list__item__header">
+                      <h3 class="features__list__item__title">
+                        Контроль количества отзывов и сортировка «по новизне»
+                      </h3>
+                      <p class="features__list__item__desc">
+                        Выбирайте, как сортировать отзывы — показывыйте самые
+                        актуальные, чтобы ваши клиенты всегда видели последние
+                        впечатления.
+                      </p>
+                    </div>
+                    <img
+                      src="src/images/feature_img_3.svg"
+                      alt="Feature_img_3.svg"
+                    />
+                  </div>
+                  <span class="features__list__item__num">3</span>
+                </div>
+                <div class="features__list__item">
+                  <wa-icon
+                    class="features__list__item__icon"
+                    src="src/images/feature_4.svg"
+                  ></wa-icon>
+                  <div class="features__list__item__main">
+                    <div class="features__list__item__header">
+                      <h3 class="features__list__item__title">
+                        Сортировка отзывов по новизне
+                      </h3>
+                      <p class="features__list__item__desc">
+                        Гибкая настройка количества отображаемых отзывов
+                        позволяет вам предоставлять клиентам наиболее важную
+                        информацию.
+                      </p>
+                    </div>
+                    <img
+                      src="src/images/feature_img_4.svg"
+                      alt="Feature_img_4.svg"
+                    />
+                  </div>
+                  <span class="features__list__item__num">4</span>
+                </div>
+                <div class="features__list__item">
+                  <wa-icon
+                    class="features__list__item__icon"
+                    src="src/images/feature_5.svg"
+                  ></wa-icon>
+                  <div class="features__list__item__main">
+                    <div class="features__list__item__header">
+                      <h3 class="features__list__item__title">
+                        Настройка дизайна виджета
+                      </h3>
+                      <p class="features__list__item__desc">
+                        Гибкая настройка количества отображаемых отзывов
+                        позволяет вам предоставлять клиентам наиболее важную
+                        информацию.
+                      </p>
+                    </div>
+                    <img
+                      src="src/images/feature_img_5.svg"
+                      alt="Feature_img_5.svg"
+                    />
+                  </div>
+                  <span class="features__list__item__num">5</span>
+                </div>
+                <div class="features__list__item">
+                  <wa-icon
+                    class="features__list__item__icon"
+                    src="src/images/feature_6.svg"
+                  ></wa-icon>
+                  <div class="features__list__item__main">
+                    <div class="features__list__item__header">
+                      <h3 class="features__list__item__title">
+                        Фильтрация негативных отзывов
+                      </h3>
+                      <p class="features__list__item__desc">
+                        Используйте функцию «Показывать только положительные
+                        отзывы», чтобы скрыть отзывы с низкими оценками (от 1 до
+                        3 баллов).
+                      </p>
+                    </div>
+                    <img
+                      src="src/images/feature_img_6.svg"
+                      alt="Feature_img_6.svg"
+                    />
+                  </div>
+                  <span class="features__list__item__num">6</span>
+                </div>
+                <div class="features__list__item">
+                  <wa-icon
+                    class="features__list__item__icon"
+                    src="src/images/feature_7.svg"
+                  ></wa-icon>
+                  <div class="features__list__item__main">
+                    <div class="features__list__item__header">
+                      <h3 class="features__list__item__title">
+                        Выбор отображения рейтингов
+                      </h3>
+                      <p class="features__list__item__desc">
+                        Настройте модуль так, чтобы показывать рейтинг на основе
+                        отзывов или пользовательских оценок
+                      </p>
+                    </div>
+                    <img
+                      src="src/images/feature_img_7.svg"
+                      alt="Feature_img_7.svg"
+                    />
+                  </div>
+                  <span class="features__list__item__num">7</span>
+                </div>
+                <div class="features__list__item">
+                  <wa-icon
+                    class="features__list__item__icon"
+                    src="src/images/feature_8.svg"
+                  ></wa-icon>
+                  <div class="features__list__item__main">
+                    <div class="features__list__item__header">
+                      <h3 class="features__list__item__title">
+                        Гибкая настройка слайдов
+                      </h3>
+                      <p class="features__list__item__desc">
+                        Определяйте количество слайдов с отзывами на одной
+                        странице, чтобы управлять отображением информации на
+                        сайте.
+                      </p>
+                    </div>
+                    <img
+                      src="src/images/feature_img_8.svg"
+                      alt="Feature_img_8.svg"
+                    />
+                  </div>
+                  <span class="features__list__item__num">8</span>
+                </div>
+                <div class="features__list__item">
+                  <wa-icon
+                    class="features__list__item__icon"
+                    src="src/images/feature_9.svg"
+                  ></wa-icon>
+                  <div class="features__list__item__main">
+                    <div class="features__list__item__header">
+                      <h3 class="features__list__item__title">
+                        Автоскролл отзывов
+                      </h3>
+                      <p class="features__list__item__desc">
+                        Вы можете включать и отключать автоматическую прокрутку
+                        карточек с отзывами, а также регулировать её скорость,
+                        чтобы ваши пользователи могли просматривать отзывы без
+                        необходимости листать их вручную.
+                      </p>
+                    </div>
+                    <img
+                      src="src/images/feature_img_9.svg"
+                      alt="Feature_img_9.svg"
+                    />
+                  </div>
+                  <span class="features__list__item__num">9</span>
+                </div>
+                <div class="features__list__item">
+                  <wa-icon
+                    class="features__list__item__icon"
+                    src="src/images/feature_10.svg"
+                  ></wa-icon>
+                  <div class="features__list__item__main">
+                    <div class="features__list__item__header">
+                      <h3 class="features__list__item__title">
+                        Размещение отзывов на разных страницах сайта
+                      </h3>
+                      <p class="features__list__item__desc">
+                        Вы можете добавить блок с отзывами на несколько нужных
+                        вам страниц сайта.
+                        <br />
+                        <br />
+                        Например, на страницы: Главная, Услуги, Контакты.
+                      </p>
+                    </div>
+                    <img
+                      src="src/images/feature_img_10.svg"
+                      alt="Feature_img_10.svg"
+                    />
+                  </div>
+                  <span class="features__list__item__num">10</span>
+                </div>
+                <div class="features__list__item">
+                  <wa-icon
+                    class="features__list__item__icon"
+                    src="src/images/feature_11.svg"
+                  ></wa-icon>
+                  <div class="features__list__item__main">
+                    <div class="features__list__item__header">
+                      <h3 class="features__list__item__title">
+                        Обновление отзывов
+                      </h3>
+                      <p class="features__list__item__desc">
+                        Отзывы на сайте появляются с периодичностью раз в пять
+                        дней.
+                      </p>
+                    </div>
+                  </div>
+                  <span class="features__list__item__num">11</span>
+                </div>
+              </div>
+            </div>
           </div>
         </wa-tab-panel>
+        <wa-tab-panel name="guide" class="tab-panel">
+          <div class="guide">
+            <div class="page-container">
+              <h2 class="guide__title">
+                <span class="guide__title--highlight">
+                  Инструкция по установке модуля
+                </span>
+                «Отзывы с Яндек.Карт на сайт»
+              </h2>
+              <div class="guide__list">
+                <div class="guide__list__item">
+                  <span class="guide__list__item__num">1</span>
+                  <h3 class="guide__list__item__title">Установка</h3>
+                  <p class="guide__list__item__desc">
+                    В разделе
+                    <i>
+                      <strong>
+                        «Маркетплейс» → «Обновление решений»→ «Список
+                        обновлений»
+                      </strong>
+                    </i>
+                    , найдите решение
+                    <i><strong>«Отзывы с Яндекс.Карт на сайт»</strong></i> и
+                    нажмите кнопку <i><strong>«Установить»</strong></i>
+                    <br />
+                    <br />
+                    В случае отсутствия модуля, сделайте «Поиск обновлений»
+                  </p>
+                  <img
+                    src="src/images/guide_img_1.svg"
+                    alt=""
+                    class="guide__list__item__img"
+                  />
+                </div>
+                <div class="guide__list__item">
+                  <span class="guide__list__item__num">2</span>
+                  <h3 class="guide__list__item__title">
+                    Местоположение модуля в административной панели
+                  </h3>
+                  <p class="guide__list__item__desc">
+                    После установки модуля, перейдите в раздел
+                    <br />
+                    <i>
+                      <strong>
+                        «Сервисы» → «Отзывы с Яндекс.Карт на сайт».
+                      </strong>
+                    </i>
+                  </p>
+                  <img
+                    src="src/images/guide_img_2.svg"
+                    alt=""
+                    class="guide__list__item__img"
+                  />
+                </div>
+                <div class="guide__list__item">
+                  <span class="guide__list__item__num">3</span>
+                  <h3 class="guide__list__item__title">
+                    Вводим идентификатор компании
+                  </h3>
+                  <p class="guide__list__item__desc">
+                    В поле
+                    <i>
+                      <strong>
+                        «Идентификатор компании в Яндекс Справочнике»
+                      </strong>
+                    </i>
+                    введите идентификатор, полученный с Яндекс.Карт.
+                  </p>
+                  <img
+                    src="src/images/guide_img_3.svg"
+                    alt=""
+                    class="guide__list__item__img"
+                  />
+                  <p class="guide__list__item__desc">
+                    <strong>
+                      Для подключения вашей организации выполните следующие
+                      шаги:
+                    </strong>
+                    <br />
+                    <br />
+                    1. Перейдите на Яндекс Карты.
+                    <br />
+                    2. Найдите свою организацию.
+                    <br />
+                    3. В адресной строке скопируйте идентификатор компании
+                    (находится «https://yandex.ru/maps-reviews-widget/<span
+                      style="color: #1c69d4"
+                      >1054430148</span
+                    >?comments&quot; — после «widget/» до знака «?») и вставьте
+                    его в настройки модуля.
+                  </p>
+                </div>
+                <div class="guide__list__item">
+                  <span class="guide__list__item__num">4</span>
+                  <h3 class="guide__list__item__title">Импорт отзывов</h3>
+                  <p class="guide__list__item__desc">
+                    После того, как вы добавили идентификатор компании, отметьте
+                    необходимые поля и нажмите
+                    <i>
+                      <strong> «Сохранить» </strong>
+                    </i>
+                    <br />
+                    <br />
+                    После сохранения нажмите
+                    <i>
+                      <strong> «Запустить импорт отзывов» </strong>
+                    </i>
+                    <br />
+                    <br />
+                    В случае ошибки при нажатии на кнопку импорта
+                    <i>
+                      <strong> («Произошла ошибка, попробуйте позже»), </strong>
+                    </i>
+                    повторите попытку через час.
+                  </p>
+                  <p class="guide__list__item__note">
+                    <strong>Важно:</strong>
+                    <br />
+                    <br />
+                    Яндекс может временно ограничить импорт отзывов, если
+                    выполнять многократные запросы импорта нажатием на кнопку.
+                  </p>
+                  <img
+                    src="src/images/guide_img_4.svg"
+                    alt=""
+                    class="guide__list__item__img"
+                  />
+                </div>
+                <div class="guide__list__item">
+                  <span class="guide__list__item__num">5</span>
+                  <h3 class="guide__list__item__title">
+                    Размещение компонента модуля на сайте
+                  </h3>
+                  <p class="guide__list__item__desc">
+                    Откройте публичную часть сайта, нажмите
+                    <i>
+                      <strong> «Изменить страницу» </strong>
+                    </i>
+                    и выберите
+                    <i>
+                      <strong> «Добавить компонент». </strong>
+                    </i>
+                    Из предложенного списка выберите модуль
+                    <i>
+                      <strong> «Отзывы с Яндекс.Карт на сайт» </strong>
+                    </i>
+                    и разместите в необходимом месте на сайте.
+                  </p>
+                </div>
+                <div class="guide__list__item">
+                  <span class="guide__list__item__num">6</span>
+                  <h3 class="guide__list__item__title">
+                    Редактирование параметров отображения отзывов
+                  </h3>
+                  <p class="guide__list__item__desc">
+                    Чтобы настроить количество отображаемых отзывов, порядок их
+                    сортировки и другие нужные параметры, откройте публичную
+                    часть сайта, включите
+                    <i>
+                      <strong> «Режим правки» </strong>
+                    </i>
+                    и выберите компонент модуля.
+                  </p>
+                  <p class="guide__list__item__note">
+                    <strong>Важно:</strong>
+                    <br />
+                    <br />
+                    Сортировка, которая присутствует в модуле, сортирует по тем
+                    отзывам, которые взяты из раздела «по умолчанию» Яндекс.Карт
+                    <br />
+                    <br />
+                    Из-за этого на сайте могут не отображаться последние
+                    добавленные отзывы, которые есть в Яндекс.Картах.
+                  </p>
+                  <div class="guide__list__item__desc-yandex">
+                    <img
+                      src="src/images/guide_img_6_1.svg"
+                      alt=""
+                      class="guide__list__item__desc-yandex__img"
+                    />
+                    <img
+                      src="src/images/guide_img_6_2.svg"
+                      alt=""
+                      class="guide__list__item__desc-yandex__img"
+                    />
+                    <div
+                      style="
+                        font-family: Open Sans;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 100%;
+                        letter-spacing: 0%;
+                        min-width: 299px;
+                        margin-top: 25px;
+                        color: var(--grey);
+                      "
+                    >
+                      <p style="margin-top: 15px">
+                        Мы не можем повлиять на «первый отзыв во умолчанию». Но
+                        вот несколько факторов, которые влияют на данную
+                        сортировку:
+                      </p>
+                      <p class="guide__list__item__desc-yandex__factor">
+                        Полезность отзыва (по мнению робота) то есть набор слов
+                        и фраз которые описывают вашу организацию.
+                      </p>
+                      <p class="guide__list__item__desc-yandex__factor">
+                        Отзыв написан по рекомендации яндекса, то есть автор
+                        отзыва получил приглашение написать отзыв о вашей
+                        организации.
+                      </p>
+                      <p class="guide__list__item__desc-yandex__factor">
+                        Прокаченность аккаунта (Уровень пользователя «Знаток
+                        города»).
+                      </p>
+                      <p style="margin-top: 15px">
+                        По этой причине, если вы хотите заменить «первый отзыв
+                        по умолчанию» рекомендуем обратиться к вашим лояльным
+                        посетителям, у которых прокаченный аккаунт, написать
+                        отзыв используя тематические слова и фразы и только
+                        после приглашения.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </wa-tab-panel>
+        <wa-tab-panel name="specs" class="tab-panel">
+          <section class="specs">
+            <div class="page-container">
+              <h2 class="specs__title">Технические параметры</h2>
+              <div class="specs-wrapper">
+                <div class="specs__compatibility">
+                  <p class="specs__compatibility__label">Cовместимо с</p>
+                  <img
+                    src="src/images/specs_1cbitrix.svg"
+                    alt=""
+                    class="specs__compatibility__img"
+                  />
+                </div>
+                <div class="specs__editions">
+                  <h3 class="specs__editions__title">Подходящие редакции:</h3>
+                  <ul class="specs__editions__list">
+                    <li class="specs__editions__list__item">«Первый сайт»,</li>
+                    <li class="specs__editions__list__item">«Старт»,</li>
+                    <li class="specs__editions__list__item">«Стандарт»,</li>
+                    <li class="specs__editions__list__item">«Малый бизнес»,</li>
+                    <li class="specs__editions__list__item">«Бизнес»,</li>
+                    <li class="specs__editions__list__item">
+                      «Интернет-магазин + CRM»
+                    </li>
+                  </ul>
+                </div>
+                <ul class="specs__features">
+                  <li class="specs__feature specs__feature--included">
+                    Адаптивность
+                  </li>
+                  <li class="specs__feature specs__feature--included">
+                    Поддержка Композита
+                  </li>
+                  <li class="specs__feature specs__feature--included">
+                    Совместимо с PHP 8.1
+                  </li>
+                  <li class="specs__feature">Совместимо с Сайты24</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </wa-tab-panel>
+        <wa-tab-panel name="support" class="tab-panel">
+          <div class="page-container">
+            <div class="support-inner">
+              <div class="support__contacts">
+                <h3 class="support__contacts__title">
+                  Мы помогаем на каждом этапе:
+                </h3>
+                <p class="support__contacts__phone">+7 939 111-20-43</p>
+                <div class="support__contacts__socials">
+                  <div class="support__contacts__socials__item">
+                    <img
+                      src="src/images/whatsapp.svg"
+                      alt="Whatsapp"
+                      class="support__contacts__socials__item__img"
+                    />
+                    <span class="support__contacts__socials__item__label">
+                      +7 939 111-20-43
+                    </span>
+                  </div>
+                  <div class="support__contacts__socials__item">
+                    <img
+                      src="src/images/telegram.svg"
+                      alt="Whatsapp"
+                      class="support__contacts__socials__item__img"
+                    />
+                    <span class="support__contacts__socials__item__label">
+                      t.me/Postsales_B24
+                    </span>
+                  </div>
+                  <div class="support__contacts__socials__item">
+                    <img
+                      src="src/images/email.svg"
+                      alt="Whatsapp"
+                      class="support__contacts__socials__item__img"
+                    />
+                    <span class="support__contacts__socials__item__label">
+                      ls@lead-space.ru
+                    </span>
+                  </div>
+                  <div class="support__contacts__socials__item">
+                    <img
+                      src="src/images/black_clock.svg"
+                      alt="Whatsapp"
+                      class="support__contacts__socials__item__img"
+                    />
+                    <span class="support__contacts__socials__item__label">
+                      пн-пт с 9:00 до 18:00 (по мск)
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="support__instructions">
+                <div class="support__instruction__tabs">
+                  <div class="instruction__tab">
+                    <button
+                      type="button"
+                      class="instruction__tab__btn instruction__tab__btn--active"
+                      data-tab-index="0"
+                    >
+                      1
+                    </button>
+                    <p
+                      class="instruction__tab__label instruction__tab__label--active"
+                    >
+                      Инструкция
+                    </p>
+                  </div>
+                  <div class="instruction__tab">
+                    <button
+                      type="button"
+                      class="instruction__tab__btn"
+                      data-tab-index="1"
+                    >
+                      2
+                    </button>
+                    <p class="instruction__tab__label">Помощь с установкой</p>
+                  </div>
+                  <div class="instruction__tab">
+                    <button
+                      type="button"
+                      class="instruction__tab__btn"
+                      data-tab-index="2"
+                    >
+                      3
+                    </button>
+                    <p class="instruction__tab__label">Техническая поддержка</p>
+                  </div>
+                </div>
+                <div class="instruction__slider-wrapper">
+                  <div class="instruction__slider">
+                    <div class="instruction__card">
+                      <div class="instruction__card-wrapper">
+                        <img
+                          src="src/images/instructions.svg"
+                          alt="Instructions"
+                          class="instruction__card__img"
+                        />
+                        <div class="instruction__card__info">
+                          <h4 class="instruction__card__label">Инструкция</h4>
+                          <p class="instruction__card__desc">
+                            Подробное описание этапов установки, технических
+                            характеристик и настроек модуля представлено на
+                            странице соответствующего решения.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="instruction__card">
+                      <div class="instruction__card-wrapper">
+                        <img
+                          src="src/images/laptop.svg"
+                          alt="Laptop"
+                          class="instruction__card__img"
+                        />
+                        <div class="instruction__card__info">
+                          <h4 class="instruction__card__label">
+                            Поможем с установкой
+                          </h4>
+                          <p class="instruction__card__desc">
+                            Если у вас возникли проблемы с первичной установкой
+                            и настройкой любого модуля, наши программисты с
+                            радостью помогут вам.
+                            <br />
+                            <br />
+                            Мы бесплатно настроим модуль и установим на нужной
+                            странице сайта. Для выполнения работы вам
+                            потребуется предоставить доступы к вашему сайту
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="instruction__card">
+                      <div class="instruction__card-wrapper">
+                        <img
+                          src="src/images/headphones.svg"
+                          alt="Headphones"
+                          class="instruction__card__img"
+                        />
+                        <div class="instruction__card__info">
+                          <h4 class="instruction__card__label">Техподдержка</h4>
+                          <p class="instruction__card__desc">
+                            Наши технические специалисты быстро предоставят вам
+                            необходимую информацию и консультацию.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </wa-tab-panel>
+        <wa-tab-panel name="faq" class="tab-panel">
+          <section class="faq">
+            <div class="page-container">
+              <div class="faq-wrapper">
+                <h2 class="faq__title">
+                  Отвечаем
+                  <span class="faq__title--highlight">на частые вопросы</span>
+                </h2>
+                <div class="wa-stack">
+                  <wa-details
+                    name="faq-group"
+                    class="faq-item"
+                    summary="Почему не работает импорт отзывов?"
+                  >
+                    <wa-icon
+                      src="src/images/plus.svg"
+                      class="faq-icon"
+                      slot="expand-icon"
+                    ></wa-icon>
+                    <wa-icon
+                      src="src/images/plus.svg"
+                      class="faq-icon"
+                      slot="collapse-icon"
+                    ></wa-icon>
+                    Проверьте, что ссылка или идентификатор были введены
+                    правильно, в соответствии с инструкцией (3 пункт). Если
+                    указано все верно, но импорт не работает, напишите нам в
+                    тех.поддержку.
+                  </wa-details>
+
+                  <wa-details
+                    name="faq-group"
+                    summary="Не прогружаются новые отзывы"
+                    class="faq-item"
+                  >
+                    <wa-icon
+                      src="src/images/plus.svg"
+                      class="faq-icon"
+                      slot="expand-icon"
+                    ></wa-icon>
+                    <wa-icon
+                      src="src/images/plus.svg"
+                      class="faq-icon"
+                      slot="collapse-icon"
+                    ></wa-icon>
+
+                    Импорт отзывов происходит автоматически раз в 5 дней.
+                    Попробуйте дождаться обновления. Если спустя время ничего не
+                    произошло, обратитесь в тех.поддержку.
+                  </wa-details>
+
+                  <wa-details
+                    name="faq-group"
+                    class="faq-item"
+                    summary="Можно ли удалить негативный отзыв?"
+                  >
+                    <wa-icon
+                      src="src/images/plus.svg"
+                      class="faq-icon"
+                      slot="expand-icon"
+                    ></wa-icon>
+                    <wa-icon
+                      src="src/images/plus.svg"
+                      class="faq-icon"
+                      slot="collapse-icon"
+                    ></wa-icon>
+
+                    Удалить негативный отзыв нельзя, но можно применить
+                    настройку “Показывать только с оценкой 4 и 5”.
+                  </wa-details>
+                  <wa-details
+                    class="faq-item"
+                    name="faq-group"
+                    summary="Почему в начале не отображаются последние добавленные отзывы?"
+                  >
+                    <wa-icon
+                      src="src/images/plus.svg"
+                      class="faq-icon"
+                      slot="expand-icon"
+                    ></wa-icon>
+                    <wa-icon
+                      src="src/images/plus.svg"
+                      class="faq-icon"
+                      slot="collapse-icon"
+                    ></wa-icon>
+
+                    Сортировка, которая присутствует в модуле, сортирует по тем
+                    отзывам, которые взяты из раздела “по умолчанию”
+                    Яндекс.Карт. Мы не можем повлиять на «первый отзыв во
+                    умолчанию», но вы можете! Обратитесь к инструкции (6 пункт)
+                    .
+                  </wa-details>
+                  <wa-details
+                    name="faq-group"
+                    class="faq-item"
+                    summary="Можно ли установить оба модуля отзывов на сайт?"
+                  >
+                    <wa-icon
+                      src="src/images/plus.svg"
+                      class="faq-icon"
+                      slot="expand-icon"
+                    ></wa-icon>
+                    <wa-icon
+                      src="src/images/plus.svg"
+                      class="faq-icon"
+                      slot="collapse-icon"
+                    ></wa-icon>
+
+                    Конечно! Если вы собираете отзывы с обеих площадок, то можно
+                    установить оба модуля. Они схожи по дизайну и прекрасно
+                    сочетаются рядом.
+                  </wa-details>
+                </div>
+              </div>
+            </div>
+          </section>
+        </wa-tab-panel>
       </wa-tab-group>
+      <section class="form"></section>
     </main>
-    <script type="module" src="/src/main.js"></script>
+    <script type="module" src="src/main.js"></script>
   </body>
 </html>

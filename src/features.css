@@ -1,0 +1,147 @@
+.features {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+}
+.features__title {
+	font-family: Open Sans;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 125%;
+	letter-spacing: 0%;
+	color: black;
+}
+
+.features__title--highlight {
+	color: var(--dark-blue);
+	display: block;
+}
+
+.features__list {
+	margin-top: 50px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.features__list__item {
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	box-shadow: 0px 3px 30px 0px #566b8b1f;
+	position: relative;
+	padding: 27px 165px 37px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.features__list__item:last-child {
+	background: var(--sky-blue);
+}
+
+.features__list__item__num {
+	height: 55px;
+	width: 69px;
+	font-family: Open Sans;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 135%;
+	letter-spacing: 0%;
+	position: absolute;
+	text-align: center;
+	color: white;
+
+	padding: 10px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	background-color: var(--red);
+
+	top: 0;
+	right: 0;
+}
+
+.features__list__item__icon {
+	position: absolute;
+	max-height: 50px;
+	max-width: 65px;
+	top: 29px;
+	left: 53px;
+	width: auto;
+	height: 100%;
+	object-fit: contain;
+}
+
+.features__list__item__main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.features__list__item__header {
+	display: flex;
+	gap: 50px;
+}
+
+.features__list__item__title {
+	font-family: Open Sans;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 125%;
+	letter-spacing: 0%;
+	color: var(--dark-black);
+	max-width: 283px;
+}
+
+.features__list__item__desc {
+	max-width: 468px;
+	font-family: Open Sans;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 135%;
+	letter-spacing: 0%;
+	color: var(--grey);
+	margin-left: auto;
+}
+
+.features__list__item__img {
+	height: auto;
+	width: 100%;
+}
+
+@media screen and (max-width: 1140px) {
+	.features__title {
+		font-size: 30px;
+	}
+
+	.features__title--highlight {
+		display: inline;
+	}
+	.features__list {
+		margin-top: 40px;
+	}
+
+	.features__list__item {
+		padding: 101px 22px 27px 25px;
+	}
+
+	.features__list__item__icon {
+		top: 25px;
+		left: 25px;
+	}
+
+	.features__list__item__main {
+		gap: 30px;
+	}
+
+	.features__list__item__header {
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.features__list__item__desc {
+		margin-left: 0;
+	}
+}

@@ -1,0 +1,178 @@
+.share {
+	border-radius: 10px;
+	background-color: white;
+	box-shadow: 0px 3px 30px 0px rgba(86, 107, 139, 0.12);
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+}
+
+.share__info::after {
+	content: "";
+	position: absolute;
+	background-image: url("images/puzzle_share_blue.svg");
+	background-repeat: no-repeat;
+	top: 0;
+	width: 91px;
+	height: 100%;
+	background-position: right center;
+	right: -90px;
+}
+
+.share__info {
+	max-width: 446px;
+	padding: 35px 0 0 66px;
+	position: relative;
+	background-color: var(--blue);
+	flex-grow: 1;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.share__info__img {
+	position: absolute;
+	height: 100%;
+}
+
+.share__info__title {
+	font-family: Open Sans;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 120%;
+	letter-spacing: 0%;
+	color: white;
+	max-width: 377px;
+}
+
+.share__info__desc {
+	font-family: Open Sans;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 125%;
+	letter-spacing: 0%;
+	color: white;
+	margin-top: 20px;
+}
+
+.share__discount {
+	padding: 33px 80px 52px 120px;
+}
+
+.share__discount__title {
+	font-family: Open Sans;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 120%;
+	letter-spacing: 0%;
+	color: var(--black);
+}
+
+.share__discount__title--highlight {
+	font-family: Open Sans;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 120%;
+	letter-spacing: 0%;
+	color: var(--blue);
+	display: block;
+}
+
+.share__discount__info {
+	margin-top: 25px;
+	display: flex;
+	gap: 30px;
+	align-items: center;
+}
+
+.share-btn {
+	font-family: Open Sans;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 125%;
+	letter-spacing: 0%;
+	text-align: center;
+	vertical-align: middle;
+	color: white;
+	padding: 19px 30px;
+	background: #0c5adb;
+	box-shadow: 0px 5px 15px 0px rgba(52, 87, 139, 0.3);
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}
+
+.share-btn__img {
+	width: 24px;
+	height: 24px;
+}
+
+.share__discount__info__desc {
+	font-family: Open Sans;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 125%;
+	letter-spacing: 0%;
+}
+
+@media screen and (max-width: 1140px) {
+	.share {
+		max-width: 345px;
+		flex-direction: column;
+	}
+
+	.share__info {
+		border-radius: 0;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		padding: 25px 39px 90px 25px;
+	}
+
+	.share__info::after {
+		content: "";
+		position: absolute;
+		background-image: url("images/puzzle_share_white.svg");
+		background-repeat: no-repeat;
+		height: 91px;
+		width: 100%;
+		top: unset;
+		right: unset;
+		bottom: -20px;
+		background-position: center center;
+		left: 0;
+		z-index: 0;
+	}
+
+	.share__info__title {
+		font-size: 24px;
+	}
+
+	.share__info__desc {
+		font-size: 18px;
+	}
+
+	.share__discount {
+		position: relative;
+		flex-direction: column;
+		padding: 27px 70px 44px 25px;
+	}
+
+	.share__discount__title {
+		font-size: 20px;
+		width: 100%;
+		text-wrap: nowrap;
+	}
+
+	.share__discount__title--highlight {
+		font-size: 30px;
+	}
+
+	.share__discount__info {
+		margin-top: 20px;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 20px;
+	}
+}

@@ -1,0 +1,69 @@
+.adaptive {
+	margin-top: 180px;
+	position: relative;
+}
+
+.adaptive::before {
+	position: absolute;
+	background: url("images/adaptive_puzzle.svg") no-repeat center top;
+	right: 88px;
+	min-width: 572px;
+	top: -71px;
+	content: "";
+	min-height: 596px;
+	z-index: -1;
+}
+
+.adaptive-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.adaptive__title,
+.adaptive__title--highlight {
+	font-family: Open Sans;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 125%;
+	letter-spacing: 0%;
+	text-align: center;
+	color: var(--dark-black);
+}
+
+.adaptive__title--highlight {
+	color: var(--darker-blue);
+}
+
+.adaptive__img {
+	margin-top: 50px;
+	max-height: 647px;
+	object-fit: contain;
+}
+
+.adaptive .share {
+	margin-top: 60px;
+}
+
+@media screen and (max-width: 1140px) {
+	.adaptive {
+		margin-top: 100px;
+	}
+
+	.adaptive-wrapper {
+		align-items: center;
+	}
+
+	.adaptive.adaptive::before {
+		background-image: none;
+	}
+
+	.adaptive__title,
+	.adaptive__title--highlight {
+		font-size: 30px;
+	}
+
+	.adaptive__img {
+		margin-top: 40px;
+		content: url("images/adaptive_img_mobile.svg");
+	}
+}

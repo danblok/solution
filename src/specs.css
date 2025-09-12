@@ -1,0 +1,129 @@
+.specs-wrapper {
+	margin-top: 40px;
+	display: flex;
+	/* justify-content: space-between; */
+}
+
+.specs__title {
+	font-family: Open Sans;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 120%;
+	letter-spacing: 0%;
+	color: black;
+	width: 100%;
+}
+
+.specs__compatibility {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.specs__compatibility__img {
+	max-width: 247px;
+}
+
+.specs__compatibility__label {
+	font-family: Open Sans;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 100%;
+	letter-spacing: 0%;
+	color: var(--black);
+}
+
+.specs__editions {
+	margin: 0 0 0 46px;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	padding: 17px 46px 23px 25px;
+	background: linear-gradient(
+		90.26deg,
+		rgba(12, 90, 219, 0.1) 13.41%,
+		rgba(83, 245, 226, 0.1) 89.73%
+	);
+	border-radius: 10px;
+}
+
+.specs__editions__title {
+	font-family: Open Sans;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 125%;
+	letter-spacing: 0%;
+	color: var(--dark-black);
+}
+
+.specs__editions__list {
+	list-style: none;
+}
+
+.specs__editions__list__item {
+	font-family: Open Sans;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 160%;
+	letter-spacing: 0%;
+	color: var(--dark-black);
+}
+
+.specs__features {
+	margin: 18px 0 0 32px;
+	list-style: none;
+}
+
+.specs__feature {
+	padding-left: 50px;
+	font-family: Open Sans;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 125%;
+	letter-spacing: 0%;
+	color: var(--dark-black);
+	/* vertical-align: top; */
+	position: relative;
+}
+
+.specs__feature:not(:first-child) {
+	margin-top: 14px;
+}
+
+.specs__feature::before {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	left: 0;
+	content: "";
+	background: url("images/specs_not_included.svg") no-repeat;
+	min-width: 30px;
+	min-height: 30px;
+	margin-right: 20px;
+}
+
+.specs__feature:is(.specs__feature--included)::before {
+	background: url("images/specs_included.svg") no-repeat;
+}
+
+@media screen and (max-width: 1140px) {
+	.specs__title {
+		font-size: 30px;
+	}
+
+	.specs-wrapper {
+		flex-direction: column;
+	}
+
+	.specs__compatibility {
+		gap: 5px;
+	}
+
+	.specs__editions {
+		margin: 20px 0 0 0;
+	}
+
+	.specs__features {
+		margin: 30px 0 0 0;
+	}
+}

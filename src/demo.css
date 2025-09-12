@@ -1,0 +1,132 @@
+.demo {
+	margin-top: 100px;
+	width: 100vw;
+	position: relative;
+}
+
+.demo::before {
+	position: absolute;
+	content: "";
+	background-image: url("images/demo_bg.svg");
+	width: 100%;
+	min-height: 820px;
+	z-index: -2;
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+
+.demo::after {
+	position: absolute;
+	content: "";
+	background-image: url("images/demo_line.svg");
+	background-position: center top;
+	width: 100%;
+	min-height: 500px;
+	top: 50%;
+	transform: translateY(-32%);
+	background-repeat: no-repeat;
+	z-index: -1;
+}
+
+.demo-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+}
+
+.demo__header,
+.demo__footer {
+	display: flex;
+	justify-content: space-between;
+}
+
+.demo__header {
+	margin-top: 76px;
+}
+
+.demo__header__title {
+	font-family: Open Sans;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 125%;
+	letter-spacing: 0%;
+	color: white;
+	max-width: 300px;
+}
+
+.demo__header__note--highlight,
+.demo__header__note {
+	color: white;
+	font-family: Open Sans;
+	font-weight: 400;
+	font-size: 30px;
+	line-height: 125%;
+	letter-spacing: 0%;
+}
+
+.demo__header__note {
+	padding: 12px 71px 17px 37px;
+	border: 1px solid white;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+
+.demo__header__note--highlight {
+	font-weight: 700;
+	display: block;
+}
+
+.demo__img {
+	min-width: 0;
+	width: clamp(
+		345px,
+		100%,
+		1140px
+	); /* min 345, preferred 100% of container, max 1140 */
+	height: auto; /* preserve aspect ratio */
+}
+
+.demo__footer__text {
+	font-family: Open Sans;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 125%;
+	letter-spacing: 0%;
+	color: white;
+	max-width: 630px;
+}
+
+@media screen and (max-width: 1140px) {
+	.demo-wrapper {
+		gap: 30px;
+	}
+
+	.demo__header {
+		flex-direction: column;
+		gap: 22px;
+		align-items: flex-start;
+	}
+
+	.demo__header__title {
+		font-size: 30px;
+	}
+
+	.demo__header__note {
+		padding: 7px 20px 10px 18px;
+	}
+	.demo__header__note,
+	.demo__header__note--highlight {
+		font-size: 24px;
+	}
+
+	.demo__header__note--highlight {
+		display: inline-block;
+	}
+
+	.demo__footer {
+		flex-direction: column;
+		gap: 30px;
+		align-items: flex-start;
+	}
+}
