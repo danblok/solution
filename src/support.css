@@ -1,12 +1,13 @@
 .support {
 	position: relative;
-	width: 100vw;
+	/* width: 100vw; */
 }
 
 .support-inner {
 	display: flex;
 	gap: 50px;
 	padding-bottom: 25px;
+	width: 100%;
 }
 
 .support__contacts__title {

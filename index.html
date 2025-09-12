@@ -89,10 +89,118 @@
     <link rel="stylesheet" href="src/specs.css" />
     <link rel="stylesheet" href="src/support.css" />
     <link rel="stylesheet" href="src/faq.css" />
+    <link rel="stylesheet" href="src/form.css" />
     <title>Яндекс Отзывы</title>
   </head>
   <body style="max-width: 1920px">
     <main>
+      <div class="share-idea-modal">
+        <div class="share-idea-modal-wrapper">
+          <button type="button" class="share-idea-modal__close-btn">
+            <img
+              src="src/images/modal_close_cross.svg"
+              alt="Cross"
+              class="share-idea-modal__close-btn__img"
+            />
+          </button>
+          <div class="share-idea-modal__content share-idea-modal_step--active">
+            <h3 class="share-idea-modal__title">Предложить идею</h3>
+            <form id="share-idea-form" class="share-idea-modal__form">
+              <div class="share-idea-form__input-group">
+                <input
+                  type="text"
+                  name="NAME"
+                  id="name"
+                  placeholder=" "
+                  class="share-idea-form__input-text"
+                />
+                <label for="name" class="share-idea-form__label">Имя</label>
+              </div>
+              <div class="share-idea-form__input-group">
+                <input
+                  type="text"
+                  name="EMAIL"
+                  id="email"
+                  placeholder=" "
+                  class="share-idea-form__input-text"
+                />
+                <label for="email" class="share-idea-form__label"
+                  >Электронная почта</label
+                >
+              </div>
+              <div class="share-idea-form__input-group">
+                <input
+                  type="text"
+                  name="PHONE"
+                  id="phone"
+                  placeholder=" "
+                  class="share-idea-form__input-text"
+                />
+                <label for="phone" class="share-idea-form__label"
+                  >Номер телефона</label
+                >
+              </div>
+              <div class="share-idea-form__input-group">
+                <input
+                  type="text"
+                  name="MESSAGE"
+                  id="message"
+                  placeholder=" "
+                  class="share-idea-form__input-text"
+                />
+                <label for="message" class="share-idea-form__label"
+                  >Расскажите подробно о вашем предложении</label
+                >
+              </div>
+              <label for="file" class="share-idea-form__file-wrapper">
+                <input
+                  type="file"
+                  size="30"
+                  name="FILES[]"
+                  multiple
+                  id="file"
+                  class="share-idea-form__input-file"
+                />
+                <span class="share-idea-form__input-file__text"
+                  >Прикрепить файл</span
+                >
+              </label>
+              <button type="submit" class="share-idea-form__btn">
+                Отправить
+              </button>
+              <label class="share-idea-form__checkbox-wrapper">
+                <input
+                  type="checkbox"
+                  id="agreement"
+                  name="AGREEMENT"
+                  value="Y"
+                  required
+                  class="share-idea-form__input-checkbox"
+                />
+                <div class="share-idea-form__agreement-text">
+                  Нажимая кнопку «Отправить заявку», вы соглашаетесь с условиями
+                  <a
+                    href="/privacy/"
+                    target="_blank"
+                    class="share-idea-form__agreement-text-privacy"
+                    >Политики конфиденциальности</a
+                  >
+                </div>
+              </label>
+            </form>
+          </div>
+          <div class="share-idea-modal__success">
+            <h2 class="share-idea-modal__success__label">Спасибо</h2>
+            <div class="share-idea-modal__success__img-wrapper">
+              <img
+                src="src/images/success_puzzle.svg"
+                alt="Logo puzzle"
+                class="share-idea-modal__success_img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="hero">
         <div class="page-container">
           <div class="hero-wrapper">

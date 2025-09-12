@@ -79,4 +79,12 @@ $(document).ready(function () {
         )
         // do something with currentSlide index (0-based)
     })
+
+    $('.share__discount__info .btn--blue').on('click', function () {
+        $('.share-idea-modal').addClass('share-idea-modal--active')
+    })
+
+    $('.share-idea-modal__close-btn').on('click', function () {
+        $('.share-idea-modal').removeClass('share-idea-modal--active')
+    })
 })

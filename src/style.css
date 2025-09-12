@@ -245,6 +245,10 @@ main {
 	margin-top: 166px;
 }
 
+.tab-group::part(body) {
+	overflow: unset;
+}
+
 .tab-panel::part(base) {
 	width: 100%;
 	margin-top: 30px;
