@@ -1,7 +1,9 @@
+.faq {
+	padding-bottom: 30px;
+}
 .faq-wrapper {
 	display: flex;
 	justify-content: space-between;
-	padding-bottom: 25px;
 }
 
 .faq__title {
@@ -87,6 +89,10 @@
 }
 
 @media screen and (max-width: 1140px) {
+	.faq {
+		padding-bottom: 70px;
+	}
+
 	.faq-wrapper {
 		flex-direction: column;
 		gap: 40px;

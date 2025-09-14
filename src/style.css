@@ -28,7 +28,6 @@ svg {
 	max-width: 100%;
 }
 
-/* 7. Inherit fonts for form controls */
 input,
 button,
 textarea,
@@ -36,7 +35,6 @@ select {
 	font: inherit;
 }
 
-/* 8. Avoid text overflows */
 p,
 h1,
 h2,
@@ -47,7 +45,6 @@ h6 {
 	overflow-wrap: break-word;
 }
 
-/* 9. Improve line wrapping */
 p {
 	text-wrap: pretty;
 }
@@ -98,7 +95,7 @@ main {
 	width: 100%;
 	min-height: 1492px;
 	background: url("images/hero_bg.svg") no-repeat center top;
-	top: -166px;
+	top: -156px;
 	z-index: -1;
 }
 
@@ -199,8 +196,6 @@ main {
 	mask: url("images/link_arrow.svg") no-repeat center top / contain;
 	background-color: var(--dark-blue);
 	transition: background-color 0.3s ease;
-	/* margin-top: 4px; */
-	/* align-self: flex-end; */
 }
 
 .hero__footer__check-site:hover::after {
@@ -217,7 +212,7 @@ main {
 	color: var(--blue);
 
 	border-radius: 60px;
-	padding: 20px;
+	padding: 20px 18px 18px 18px;
 	border: 1px solid var(--blue);
 	transition: all 0.2s ease;
 }
@@ -234,14 +229,14 @@ main {
 }
 
 .tab-group::part(tabs) {
+	width: 100%;
 	gap: 15px;
 	flex-wrap: wrap;
-	margin: 0 auto;
 	max-width: 1140px;
+	margin: 0 auto;
 }
 
 .tab-group {
-	margin: 0 auto;
 	margin-top: 166px;
 }
 
@@ -251,7 +246,7 @@ main {
 
 .tab-panel::part(base) {
 	width: 100%;
-	margin-top: 30px;
+	margin-top: 40px;
 }
 
 .btn--red {
@@ -270,7 +265,6 @@ main {
 	line-height: 125%;
 	letter-spacing: 0%;
 	text-align: center;
-	vertical-align: middle;
 	border: none;
 	cursor: pointer;
 
@@ -306,21 +300,6 @@ main {
 	background: var(--blue);
 }
 
-.form {
-	min-height: 1500px;
-	width: 100%;
-	position: relative;
-}
-
-.form::before {
-	content: "";
-	position: absolute;
-	background: url("images/form_bg.svg") no-repeat center top;
-	width: 100%;
-	min-height: 1512px;
-	top: -35px;
-}
-
 @media screen and (max-width: 1140px) {
 	.page-container {
 		min-width: 375px;
@@ -342,21 +321,17 @@ main {
 
 	.hero__header__title {
 		font-size: 30px;
+		max-width: 267px;
 	}
 
 	.hero__header__desc {
 		font-size: 14px;
 		line-height: 130%;
+		max-width: 335px;
 	}
 
 	.tab::part(base) {
 		padding: 12.5px 12px;
-	}
-
-	.tab-panel::part(base) {
-		margin-top: 20px;
-		padding-bottom: 100px;
-		width: 100vw;
 	}
 
 	.tab-group {
@@ -366,11 +341,6 @@ main {
 	.tab-group::part(tabs) {
 		padding: 0 15px;
 		gap: 10px;
-	}
-
-	.hero::after {
-		background-position-y: top;
-		transform: translateY(-50%);
 	}
 
 	.hero__footer {
@@ -388,34 +358,20 @@ main {
 
 	.hero::before {
 		background: url("images/hero_bg_mobile.svg") no-repeat center top;
-		/* background: */
-		/* 	url("images/hero_bg_mobile.svg") no-repeat center center / cover; */
-		/* left: -250px; */
-		/* top: -250px; */
-		/* top: -120px; */
-		/* top: -120px; */
-		/* top: -240px; */
 		bottom: -150px;
 		min-height: 1174px;
 		top: unset;
-		/* width: calc(100% + 250px); */
-		/* bottom: -120px; */
 	}
-}
 
-@media screen and (max-width: 720px) {
 	.hero::after {
-		background: url("images/hero_line_mobile.svg") no-repeat right top;
-		min-height: 0;
-		height: 280px;
-		transform: translateY(-35%);
-		right: -120px;
-		width: calc(100% + 120px);
+		background: url("images/hero_line_mobile.svg") no-repeat center center;
+		min-height: unset;
+		min-height: 380px;
+		top: 40%;
 	}
-}
 
-@media screen and (max-width: 600px) {
 	.hero__img {
 		content: url("images/hero_img_mobile.svg");
+		margin: 29px auto 0 auto;
 	}
 }

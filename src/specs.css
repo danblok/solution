@@ -1,7 +1,10 @@
+.specs {
+	padding-bottom: 60px;
+}
+
 .specs-wrapper {
 	margin-top: 40px;
 	display: flex;
-	/* justify-content: space-between; */
 }
 
 .specs__title {

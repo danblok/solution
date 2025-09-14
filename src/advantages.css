@@ -2,7 +2,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-self: center;
 }
 
 .advantages__title,
@@ -101,7 +100,6 @@
 	.advantages__card::part(body) {
 		display: flex;
 		flex-direction: column;
-		/* gap: 40px; */
 	}
 
 	.advantages__card__icon::part(svg) {

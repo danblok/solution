@@ -1,14 +1,17 @@
 .adaptive {
-	margin-top: 180px;
+	padding-top: 60px;
+	margin-top: 110px;
 	position: relative;
+	overflow: hidden;
 }
 
 .adaptive::before {
 	position: absolute;
 	background: url("images/adaptive_puzzle.svg") no-repeat center top;
-	right: 88px;
-	min-width: 572px;
-	top: -71px;
+	right: -589px;
+	min-width: 100%;
+	max-width: 571px;
+	top: 0;
 	content: "";
 	min-height: 596px;
 	z-index: -1;
@@ -40,13 +43,10 @@
 	object-fit: contain;
 }
 
-.adaptive .share {
-	margin-top: 60px;
-}
-
 @media screen and (max-width: 1140px) {
 	.adaptive {
 		margin-top: 100px;
+		padding-top: 0;
 	}
 
 	.adaptive-wrapper {

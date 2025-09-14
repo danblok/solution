@@ -1,6 +1,5 @@
 .demo {
 	margin-top: 100px;
-	width: 100vw;
 	position: relative;
 }
 
@@ -79,12 +78,9 @@
 
 .demo__img {
 	min-width: 0;
-	width: clamp(
-		345px,
-		100%,
-		1140px
-	); /* min 345, preferred 100% of container, max 1140 */
-	height: auto; /* preserve aspect ratio */
+	width: clamp(345px, 100%, 1140px);
+	height: auto;
+	min-height: 73px;
 }
 
 .demo__footer__text {
@@ -98,7 +94,24 @@
 }
 
 @media screen and (max-width: 1140px) {
+	.demo::before {
+		background: url("images/demo_bg_mobile.svg") no-repeat 58% top;
+		width: 100%;
+		min-height: 711px;
+	}
+
+	.demo::after {
+		background-image: none;
+		/* min-width: 1140px; */
+	}
+
+	.demo__img {
+		min-height: unset;
+		max-height: 160px;
+	}
+
 	.demo-wrapper {
+		padding-top: 35px;
 		gap: 30px;
 	}
 
@@ -106,6 +119,7 @@
 		flex-direction: column;
 		gap: 22px;
 		align-items: flex-start;
+		max-width: 198px;
 	}
 
 	.demo__header__title {
@@ -114,7 +128,9 @@
 
 	.demo__header__note {
 		padding: 7px 20px 10px 18px;
+		min-width: 270px;
 	}
+
 	.demo__header__note,
 	.demo__header__note--highlight {
 		font-size: 24px;

@@ -1,6 +1,5 @@
 .support {
 	position: relative;
-	/* width: 100vw; */
 }
 
 .support-inner {
@@ -196,8 +195,7 @@
 	.support {
 		padding-left: 15px;
 		padding-right: 15px;
-		background: linear-gradient(94.14deg, #e7eefb 42%, #eefefc 85.4%);
-		padding-bottom: 70px;
+		padding-bottom: 150px;
 	}
 
 	.support-inner {

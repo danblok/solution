@@ -89,6 +89,7 @@
     <link rel="stylesheet" href="src/specs.css" />
     <link rel="stylesheet" href="src/support.css" />
     <link rel="stylesheet" href="src/faq.css" />
+    <link rel="stylesheet" href="src/modal.css" />
     <link rel="stylesheet" href="src/form.css" />
     <title>Яндекс Отзывы</title>
   </head>
@@ -996,149 +997,155 @@
           </section>
         </wa-tab-panel>
         <wa-tab-panel name="support" class="tab-panel">
-          <div class="page-container">
-            <div class="support-inner">
-              <div class="support__contacts">
-                <h3 class="support__contacts__title">
-                  Мы помогаем на каждом этапе:
-                </h3>
-                <p class="support__contacts__phone">+7 939 111-20-43</p>
-                <div class="support__contacts__socials">
-                  <div class="support__contacts__socials__item">
-                    <img
-                      src="src/images/whatsapp.svg"
-                      alt="Whatsapp"
-                      class="support__contacts__socials__item__img"
-                    />
-                    <span class="support__contacts__socials__item__label">
-                      +7 939 111-20-43
-                    </span>
-                  </div>
-                  <div class="support__contacts__socials__item">
-                    <img
-                      src="src/images/telegram.svg"
-                      alt="Whatsapp"
-                      class="support__contacts__socials__item__img"
-                    />
-                    <span class="support__contacts__socials__item__label">
-                      t.me/Postsales_B24
-                    </span>
-                  </div>
-                  <div class="support__contacts__socials__item">
-                    <img
-                      src="src/images/email.svg"
-                      alt="Whatsapp"
-                      class="support__contacts__socials__item__img"
-                    />
-                    <span class="support__contacts__socials__item__label">
-                      ls@lead-space.ru
-                    </span>
-                  </div>
-                  <div class="support__contacts__socials__item">
-                    <img
-                      src="src/images/black_clock.svg"
-                      alt="Whatsapp"
-                      class="support__contacts__socials__item__img"
-                    />
-                    <span class="support__contacts__socials__item__label">
-                      пн-пт с 9:00 до 18:00 (по мск)
-                    </span>
+          <section class="support">
+            <div class="page-container">
+              <div class="support-inner">
+                <div class="support__contacts">
+                  <h3 class="support__contacts__title">
+                    Мы помогаем на каждом этапе:
+                  </h3>
+                  <p class="support__contacts__phone">+7 939 111-20-43</p>
+                  <div class="support__contacts__socials">
+                    <div class="support__contacts__socials__item">
+                      <img
+                        src="src/images/whatsapp.svg"
+                        alt="Whatsapp"
+                        class="support__contacts__socials__item__img"
+                      />
+                      <span class="support__contacts__socials__item__label">
+                        +7 939 111-20-43
+                      </span>
+                    </div>
+                    <div class="support__contacts__socials__item">
+                      <img
+                        src="src/images/telegram.svg"
+                        alt="Whatsapp"
+                        class="support__contacts__socials__item__img"
+                      />
+                      <span class="support__contacts__socials__item__label">
+                        t.me/Postsales_B24
+                      </span>
+                    </div>
+                    <div class="support__contacts__socials__item">
+                      <img
+                        src="src/images/email.svg"
+                        alt="Whatsapp"
+                        class="support__contacts__socials__item__img"
+                      />
+                      <span class="support__contacts__socials__item__label">
+                        ls@lead-space.ru
+                      </span>
+                    </div>
+                    <div class="support__contacts__socials__item">
+                      <img
+                        src="src/images/black_clock.svg"
+                        alt="Whatsapp"
+                        class="support__contacts__socials__item__img"
+                      />
+                      <span class="support__contacts__socials__item__label">
+                        пн-пт с 9:00 до 18:00 (по мск)
+                      </span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="support__instructions">
-                <div class="support__instruction__tabs">
-                  <div class="instruction__tab">
-                    <button
-                      type="button"
-                      class="instruction__tab__btn instruction__tab__btn--active"
-                      data-tab-index="0"
-                    >
-                      1
-                    </button>
-                    <p
-                      class="instruction__tab__label instruction__tab__label--active"
-                    >
-                      Инструкция
-                    </p>
+                <div class="support__instructions">
+                  <div class="support__instruction__tabs">
+                    <div class="instruction__tab">
+                      <button
+                        type="button"
+                        class="instruction__tab__btn instruction__tab__btn--active"
+                        data-tab-index="0"
+                      >
+                        1
+                      </button>
+                      <p
+                        class="instruction__tab__label instruction__tab__label--active"
+                      >
+                        Инструкция
+                      </p>
+                    </div>
+                    <div class="instruction__tab">
+                      <button
+                        type="button"
+                        class="instruction__tab__btn"
+                        data-tab-index="1"
+                      >
+                        2
+                      </button>
+                      <p class="instruction__tab__label">Помощь с установкой</p>
+                    </div>
+                    <div class="instruction__tab">
+                      <button
+                        type="button"
+                        class="instruction__tab__btn"
+                        data-tab-index="2"
+                      >
+                        3
+                      </button>
+                      <p class="instruction__tab__label">
+                        Техническая поддержка
+                      </p>
+                    </div>
                   </div>
-                  <div class="instruction__tab">
-                    <button
-                      type="button"
-                      class="instruction__tab__btn"
-                      data-tab-index="1"
-                    >
-                      2
-                    </button>
-                    <p class="instruction__tab__label">Помощь с установкой</p>
-                  </div>
-                  <div class="instruction__tab">
-                    <button
-                      type="button"
-                      class="instruction__tab__btn"
-                      data-tab-index="2"
-                    >
-                      3
-                    </button>
-                    <p class="instruction__tab__label">Техническая поддержка</p>
-                  </div>
-                </div>
-                <div class="instruction__slider-wrapper">
-                  <div class="instruction__slider">
-                    <div class="instruction__card">
-                      <div class="instruction__card-wrapper">
-                        <img
-                          src="src/images/instructions.svg"
-                          alt="Instructions"
-                          class="instruction__card__img"
-                        />
-                        <div class="instruction__card__info">
-                          <h4 class="instruction__card__label">Инструкция</h4>
-                          <p class="instruction__card__desc">
-                            Подробное описание этапов установки, технических
-                            характеристик и настроек модуля представлено на
-                            странице соответствующего решения.
-                          </p>
+                  <div class="instruction__slider-wrapper">
+                    <div class="instruction__slider">
+                      <div class="instruction__card">
+                        <div class="instruction__card-wrapper">
+                          <img
+                            src="src/images/instructions.svg"
+                            alt="Instructions"
+                            class="instruction__card__img"
+                          />
+                          <div class="instruction__card__info">
+                            <h4 class="instruction__card__label">Инструкция</h4>
+                            <p class="instruction__card__desc">
+                              Подробное описание этапов установки, технических
+                              характеристик и настроек модуля представлено на
+                              странице соответствующего решения.
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="instruction__card">
-                      <div class="instruction__card-wrapper">
-                        <img
-                          src="src/images/laptop.svg"
-                          alt="Laptop"
-                          class="instruction__card__img"
-                        />
-                        <div class="instruction__card__info">
-                          <h4 class="instruction__card__label">
-                            Поможем с установкой
-                          </h4>
-                          <p class="instruction__card__desc">
-                            Если у вас возникли проблемы с первичной установкой
-                            и настройкой любого модуля, наши программисты с
-                            радостью помогут вам.
-                            <br />
-                            <br />
-                            Мы бесплатно настроим модуль и установим на нужной
-                            странице сайта. Для выполнения работы вам
-                            потребуется предоставить доступы к вашему сайту
-                          </p>
+                      <div class="instruction__card">
+                        <div class="instruction__card-wrapper">
+                          <img
+                            src="src/images/laptop.svg"
+                            alt="Laptop"
+                            class="instruction__card__img"
+                          />
+                          <div class="instruction__card__info">
+                            <h4 class="instruction__card__label">
+                              Поможем с установкой
+                            </h4>
+                            <p class="instruction__card__desc">
+                              Если у вас возникли проблемы с первичной
+                              установкой и настройкой любого модуля, наши
+                              программисты с радостью помогут вам.
+                              <br />
+                              <br />
+                              Мы бесплатно настроим модуль и установим на нужной
+                              странице сайта. Для выполнения работы вам
+                              потребуется предоставить доступы к вашему сайту
+                            </p>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="instruction__card">
-                      <div class="instruction__card-wrapper">
-                        <img
-                          src="src/images/headphones.svg"
-                          alt="Headphones"
-                          class="instruction__card__img"
-                        />
-                        <div class="instruction__card__info">
-                          <h4 class="instruction__card__label">Техподдержка</h4>
-                          <p class="instruction__card__desc">
-                            Наши технические специалисты быстро предоставят вам
-                            необходимую информацию и консультацию.
-                          </p>
+                      <div class="instruction__card">
+                        <div class="instruction__card-wrapper">
+                          <img
+                            src="src/images/headphones.svg"
+                            alt="Headphones"
+                            class="instruction__card__img"
+                          />
+                          <div class="instruction__card__info">
+                            <h4 class="instruction__card__label">
+                              Техподдержка
+                            </h4>
+                            <p class="instruction__card__desc">
+                              Наши технические специалисты быстро предоставят
+                              вам необходимую информацию и консультацию.
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -1146,7 +1153,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </section>
         </wa-tab-panel>
         <wa-tab-panel name="faq" class="tab-panel">
           <section class="faq">
