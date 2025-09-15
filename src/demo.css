@@ -101,8 +101,9 @@
 	}
 
 	.demo::after {
-		background-image: none;
-		/* min-width: 1140px; */
+		background: url("images/demo_line_mobile.svg") no-repeat 63% top;
+		top: 47%;
+		min-height: 180px;
 	}
 
 	.demo__img {

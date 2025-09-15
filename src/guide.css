@@ -107,6 +107,7 @@
 .guide__list__item__desc-yandex {
 	display: flex;
 	justify-content: space-between;
+	gap: 20px;
 }
 
 .guide__list__item__desc-yandex__factor {
@@ -125,8 +126,13 @@
 	left: 0;
 }
 
+.guide__list__item__desc-yandex__factor--highlight {
+	color: var(--dark-black);
+}
+
 @media screen and (max-width: 1140px) {
 	.guide__title {
+		max-width: 400px;
 		font-size: 30px;
 	}
 
@@ -144,7 +150,6 @@
 		left: -30px;
 		bottom: -40px;
 		min-height: 77px;
-		/* width: 100vw; */
 	}
 
 	.guide__list__item__title {
@@ -152,9 +157,11 @@
 	}
 
 	.guide__list__item__desc-yandex {
+		margin-top: 20px;
 		flex-wrap: wrap;
+		gap: 0px;
 	}
 	.guide__list__item__desc-yandex__img {
-		width: 50%;
+		margin: 0 auto;
 	}
 }
