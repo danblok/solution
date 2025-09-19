@@ -52,6 +52,15 @@ a {
 	text-decoration: none;
 }
 
+ul,
+ol {
+	list-style-type: none;
+}
+
+li {
+	text-wrap: nowrap;
+}
+
 :root {
 	--blue: #3a77dc;
 	--light-blue: #3d79dd;
@@ -60,6 +69,8 @@ a {
 	--sky-blue: #d6e3f7;
 	--ultra-light-blue: #709ce5;
 	--grey: #616161;
+	--light-grey: #c5d6f2;
+	--light-dark: #333333;
 	--black: #232323;
 	--dark-black: #161a1d;
 	--light-red: #f34590;

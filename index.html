@@ -80,6 +80,7 @@
     <!-- ></script> -->
     <!-- LOCAL END -->
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/header.css" />
     <link rel="stylesheet" href="src/advantages.css" />
     <link rel="stylesheet" href="src/demo.css" />
     <link rel="stylesheet" href="src/adaptive.css" />
@@ -94,6 +95,226 @@
     <title>Яндекс Отзывы</title>
   </head>
   <body style="max-width: 1920px">
+    <header class="header">
+      <div class="page-container">
+        <div class="header__top">
+          <div class="header__logo">
+            <img
+              src="src/images/logo.svg"
+              alt="LeadSpace logo"
+              class="header__logo__img"
+            />
+            <h2 class="header__logo__title">
+              Lead
+              <span class="header__logo__title--highlight">Space</span>
+            </h2>
+          </div>
+          <div class="header__contacts">
+            <div class="header__contacts__item">
+              <img
+                class="header__contacts__item__img"
+                src="src/images/phone.svg"
+                alt="Phone img"
+              />
+              <a class="header__contacts__item__link" href="tel:+79391112043">
+                +7 939 111-20-43
+              </a>
+            </div>
+            <div class="header__contacts__item">
+              <img
+                class="header__contacts__item__img"
+                src="src/images/email.svg"
+                alt="Email img"
+              />
+              <a
+                class="header__contacts__item__link"
+                href="mailto:info@lead-space.ru"
+              >
+                info@lead-space.ru
+              </a>
+            </div>
+          </div>
+          <div class="header__socials">
+            <a href="#">
+              <img
+                src="src/images/vk.svg"
+                alt="VK logo"
+                class="header__socials__item"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="src/images/telegram.svg"
+                alt="TG logo"
+                class="header__socials__item"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="src/images/whatsapp.svg"
+                alt="WhatsApp logo"
+                class="header__socials__item"
+              />
+            </a>
+          </div>
+          <button class="btn--blue header__btn">Начать проект</button>
+        </div>
+      </div>
+      <div class="header__separator"></div>
+      <div class="page-container">
+        <nav class="header__nav">
+          <div class="header__nav__top">
+            <button class="header__nav__back-btn">
+              <img
+                src="src/images/menu_back_arrow.svg"
+                alt="Back arrow"
+                class="header__nav__back-btn__image"
+              />
+            </button>
+            <h3 class="header__nav__title">Меню</h3>
+          </div>
+          <ul class="header__nav__menu">
+            <li class="header__nav__menu__item">
+              <a class="header__nav__menu__item-link">Битрикс24</a>
+              <ul class="header__nav__submenu">
+                <li class="header__nav__menu__item">
+                  <a class="header__nav__menu__item-link" href="/crm"
+                    >Внедрение CRM</a
+                  >
+                </li>
+                <li class="header__nav__menu__item">
+                  <a class="header__nav__menu__item-link" href="/license"
+                    >Лицензии и тарифы</a
+                  >
+                </li>
+                <li class="header__nav__menu__item">
+                  <a class="header__nav__menu__item-link" href="/support">
+                    Техподдержка Битрикс24
+                  </a>
+                  <!-- <ul class="header__nav__submenu"> -->
+                  <!--   <li class="header__nav__menu__item"> -->
+                  <!--     <a class="header__nav__menu__item-link" href="/crm"> -->
+                  <!--       Внедрение CRM -->
+                  <!--     </a> -->
+                  <!--   </li> -->
+                  <!--   <li class="header__nav__menu__item"> -->
+                  <!--     <a class="header__nav__menu__item-link" href="/license"> -->
+                  <!--       Лицензии и тарифы -->
+                  <!--     </a> -->
+                  <!--   </li> -->
+                  <!---->
+                  <!--   <li class="header__nav__menu__item"> -->
+                  <!--     <a class="header__nav__menu__item-link" href="/support"> -->
+                  <!--       Техподдержка Битрикс24 -->
+                  <!--     </a> -->
+                  <!--   </li> -->
+                  <!-- </ul> -->
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav__menu__item">
+              <a class="header__nav__menu__item-link">Разработка сайтов</a>
+              <ul class="header__nav__submenu">
+                <li class="header__nav__menu__item">
+                  <a class="header__nav__menu__item-link" href="/websites">
+                    Разработка сайтов
+                  </a>
+                </li>
+                <li class="header__nav__menu__item">
+                  <a class="header__nav__menu__item-link" href="/support">
+                    Техническая поддержка сайтов
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav__menu__item">
+              <a class="header__nav__menu__item-link"> Готовые решения </a>
+              <ul class="header__nav__submenu">
+                <li class="header__nav__menu__item">
+                  <a class="header__nav__menu__item-link" href="/solutions">
+                    Каталог решений
+                  </a>
+                </li>
+                <li
+                  class="header__nav__menu__item header__nav__menu__item--selected"
+                >
+                  <a
+                    class="header__nav__menu__item-link"
+                    href="/solutions/yandexreviews"
+                  >
+                    Отзывы с Яндекс.Карт на сайт
+                  </a>
+                </li>
+                <li class="header__nav__menu__item">
+                  <a
+                    class="header__nav__menu__item-link"
+                    href="/solutions/2gisreviews"
+                  >
+                    Отзывы с 2ГИС на сайт
+                  </a>
+                </li>
+                <li class="header__nav__menu__item">
+                  <a
+                    class="header__nav__menu__item-link"
+                    href="/solutions/leadcatcher"
+                  >
+                    Ловец лидов
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav__menu__item">
+              <a class="header__nav__menu__item-link" href="/context"
+                >Контекстная реклама</a
+              >
+            </li>
+            <li class="header__nav__menu__item">
+              <a class="header__nav__menu__item-link" href="/cases">Кейсы</a>
+            </li>
+            <li class="header__nav__menu__item">
+              <a class="header__nav__menu__item-link" href="/blog">Блог</a>
+            </li>
+            <li class="header__nav__menu__item">
+              <a class="header__nav__menu__item-link" href="/about">О нас</a>
+            </li>
+            <li class="header__nav__menu__item">
+              <a class="header__nav__menu__item-link" href="/contacts">
+                Контакты
+              </a>
+            </li>
+          </ul>
+          <div class="header__contacts">
+            <div class="header__contacts__item">
+              <img
+                class="header__contacts__item__img"
+                src="src/images/phone.svg"
+                alt="Phone img"
+              />
+              <a class="header__contacts__item__link" href="tel:+79391112043">
+                +7 939 111-20-43
+              </a>
+            </div>
+            <div class="header__contacts__item">
+              <img
+                class="header__contacts__item__img"
+                src="src/images/email.svg"
+                alt="Email img"
+              />
+              <a
+                class="header__contacts__item__link"
+                href="mailto:info@lead-space.ru"
+              >
+                info@lead-space.ru
+              </a>
+            </div>
+            <button class="btn--blue header__btn">Начать проект</button>
+          </div>
+        </nav>
+      </div>
+      <button class="burger">
+        <span></span>
+      </button>
+    </header>
     <main>
       <div class="share-idea-modal">
         <div class="share-idea-modal-wrapper">

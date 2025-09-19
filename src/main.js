@@ -22,6 +22,65 @@ $(document).ready(function () {
     console.log('query params:', query)
     let tab = query.get('tab') ?? 'desc'
 
+    $('.header__nav__menu__item').on('mouseenter', function () {
+        if ($(window).width() > 1140) {
+            $(this).addClass('header__nav__menu__item--active')
+        }
+    })
+
+    $('.header__nav__menu__item').on('mouseleave', function () {
+        if ($(window).width() > 1140) {
+            $(this).removeClass('header__nav__menu__item--active')
+        }
+    })
+
+    $('.header__nav__back-btn').click(function () {
+        const headerNav = $('.header__nav')
+        let active = $('.header__nav__menu__item--active')
+
+        if (active.length) {
+            active.last().removeClass('header__nav__menu__item--active')
+            active = $(
+                '.header__nav__menu__item--active:has(.header__nav__submenu)',
+            )
+            if (active.length === 0) {
+                $('.header__nav__title').text('Меню')
+                $('.header__nav__back-btn__image').removeClass(
+                    'header__nav__back-btn__image--active',
+                )
+            } else {
+                $('.header__nav__title').text(
+                    active.find('> .header__nav__menu__item-link').text(),
+                )
+            }
+        }
+    })
+
+    $('.burger').click(function () {
+        $(this).toggleClass('burger--active')
+        if ($(this).hasClass('burger--active')) {
+            $('.header__nav').addClass('header__nav--active')
+        } else {
+            $('.header__nav').removeClass('header__nav--active')
+            $('.header__nav__menu__item--active').toggleClass(
+                'header__nav__menu__item--active',
+            )
+            $('.header__nav__title').text('Меню')
+        }
+    })
+
+    $('.header__nav__menu__item:has(.header__nav__submenu)').click(function () {
+        $(this).addClass('header__nav__menu__item--active')
+        const curItem = $(
+            '.header__nav__menu__item--active > .header__nav__menu__item-link',
+        ).last()
+
+        $('.header__nav__title').text(curItem.text())
+        $('.header__nav__back-btn__image').addClass(
+            'header__nav__back-btn__image--active',
+        )
+    })
+
     $(window).on('resize', function () {
         initSlick('.advantages__list', {
             dots: false,
