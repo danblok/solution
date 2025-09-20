@@ -10,7 +10,6 @@
 	font-weight: 700;
 	font-size: 45px;
 	line-height: 120%;
-	letter-spacing: 0%;
 }
 
 .advantages__title--highlight {
@@ -22,7 +21,7 @@
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 150%;
-	letter-spacing: 0%;
+
 	color: var(--grey);
 	margin-top: 25px;
 	max-width: 747px;
@@ -57,7 +56,7 @@
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 125%;
-	letter-spacing: 0%;
+
 	color: var(--black);
 	max-width: 350px;
 }
@@ -66,7 +65,7 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 125%;
-	letter-spacing: 0%;
+
 	color: var(--grey);
 	margin-top: 15px;
 }

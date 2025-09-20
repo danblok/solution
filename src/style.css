@@ -130,7 +130,7 @@ main {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 125%;
-	letter-spacing: 0%;
+
 	vertical-align: middle;
 	color: var(--grey);
 }
@@ -155,7 +155,7 @@ main {
 	font-weight: 700;
 	font-size: 45px;
 	line-height: 120%;
-	letter-spacing: 0%;
+
 	color: var(--black);
 }
 
@@ -164,7 +164,7 @@ main {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 150%;
-	letter-spacing: 0%;
+
 	color: var(--grey);
 	max-width: 353px;
 }
@@ -190,7 +190,7 @@ main {
 	font-family: Open Sans;
 	font-size: 16px;
 	line-height: 125%;
-	letter-spacing: 0%;
+
 	color: var(--dark-blue);
 	display: inline-flex;
 	align-items: center;
@@ -218,7 +218,7 @@ main {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 125%;
-	letter-spacing: 0%;
+
 	text-align: center;
 	color: var(--blue);
 
@@ -274,7 +274,7 @@ main {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 125%;
-	letter-spacing: 0%;
+
 	text-align: center;
 	border: none;
 	cursor: pointer;
@@ -298,7 +298,7 @@ main {
 	font-weight: 600;
 	font-size: 16px;
 	line-height: 125%;
-	letter-spacing: 0%;
+
 	border: none;
 	cursor: pointer;
 	align-items: center;

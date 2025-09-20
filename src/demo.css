@@ -48,7 +48,7 @@
 	font-weight: 700;
 	font-size: 45px;
 	line-height: 125%;
-	letter-spacing: 0%;
+
 	color: white;
 	max-width: 300px;
 }
@@ -60,7 +60,6 @@
 	font-weight: 400;
 	font-size: 30px;
 	line-height: 125%;
-	letter-spacing: 0%;
 }
 
 .demo__header__note {
@@ -88,7 +87,7 @@
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 125%;
-	letter-spacing: 0%;
+
 	color: white;
 	max-width: 630px;
 }

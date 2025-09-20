@@ -8,7 +8,7 @@
 	font-weight: 700;
 	font-size: 45px;
 	line-height: 125%;
-	letter-spacing: 0%;
+
 	color: black;
 }
 
@@ -47,7 +47,7 @@
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 135%;
-	letter-spacing: 0%;
+
 	position: absolute;
 	text-align: center;
 	color: white;
@@ -90,7 +90,7 @@
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 125%;
-	letter-spacing: 0%;
+
 	color: var(--dark-black);
 	max-width: 283px;
 }
@@ -101,7 +101,7 @@
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 135%;
-	letter-spacing: 0%;
+
 	color: var(--grey);
 	margin-left: auto;
 }

@@ -2,6 +2,7 @@
 	margin-top: 20px;
 	width: 100%;
 	position: relative;
+	min-height: 1447px;
 }
 
 .form::before {
@@ -14,8 +15,12 @@
 }
 
 @media screen and (max-width: 1140px) {
+	.form {
+		min-height: 1249px;
+	}
+
 	.form::before {
 		background: url("images/form_bg_mobile.svg") no-repeat 73% top;
-		min-height: 1300px;
+		min-height: 1300x;
 	}
 }
