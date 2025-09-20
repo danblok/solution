@@ -57,9 +57,9 @@ ol {
 	list-style-type: none;
 }
 
-li {
-	text-wrap: nowrap;
-}
+/* li { */
+/* 	text-wrap: nowrap; */
+/* } */
 
 :root {
 	--blue: #3a77dc;
@@ -86,6 +86,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
+	padding-top: 66px;
 }
 
 .page-container {

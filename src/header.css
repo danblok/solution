@@ -223,6 +223,7 @@
 	border-bottom: 4px solid transparent;
 	transition: all 0.2s ease;
 	position: relative;
+	text-wrap: nowrap;
 }
 
 .header__nav__menu > .header__nav__menu__item:hover {
@@ -400,7 +401,7 @@
 		top: 0;
 		left: 0;
 		z-index: 10;
-		transform: translateX(100%);
+		transform: translateX(200%);
 		opacity: 0;
 		transition:
 			transform 0.3s ease-out,
