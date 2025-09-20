@@ -57,9 +57,9 @@ ol {
 	list-style-type: none;
 }
 
-li {
-	text-wrap: nowrap;
-}
+/* li { */
+/* 	text-wrap: nowrap; */
+/* } */
 
 :root {
 	--blue: #3a77dc;
@@ -312,8 +312,12 @@ main {
 }
 
 @media screen and (max-width: 1140px) {
+	main {
+		padding-top: 66px;
+	}
+
 	.page-container {
-		min-width: 375px;
+		min-width: 345px;
 		padding: 0 15px;
 	}
 
