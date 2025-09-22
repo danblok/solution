@@ -189,9 +189,10 @@
 
 .header__nav__back-btn__image {
 	display: none;
-	min-width: 17px;
+	min-width: 13px;
 	min-height: 8px;
-	margin-right: 12px;
+	margin-right: 20px;
+	margin-top: 5px;
 }
 
 .header__nav__back-btn__image--active {
@@ -375,6 +376,7 @@
 
 	.header__nav__top {
 		display: flex;
+		align-items: flex-start;
 	}
 
 	.header__nav__menu {
