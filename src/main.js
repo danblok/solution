@@ -146,4 +146,9 @@ $(document).ready(function () {
     $('.share-idea-modal__close-btn').on('click', function () {
         $('.share-idea-modal').removeClass('share-idea-modal--active')
     })
+
+    $('#form').on('submit', function (event) {
+        event.preventDefault()
+        console.log($('#form').serialize())
+    })
 })

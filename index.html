@@ -52,6 +52,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script
+      src="https://smartcaptcha.yandexcloud.net/captcha.js"
+      defer
+    ></script>
+
     <!-- REMOTE END -->
     <!-- LOCAL START -->
     <!-- <script -->
@@ -1494,7 +1499,20 @@
           </section>
         </wa-tab-panel>
       </wa-tab-group>
-      <section class="form"></section>
+      <section class="form">
+        <form id="form" style="padding-top: 200px">
+          <h1>Yandex Captcha</h1>
+          <div
+            id="captcha-container"
+            class="smart-captcha"
+            data-sitekey="ysc1_Rnt2Y0hlBfuvqfRlEWbxX5mp9hlLW1fJIWs8tmhW19129a52"
+            style="height: 100px"
+          >
+            <input type="hidden" name="smart-token" value="" />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
     </main>
     <footer class="footer">
       <div class="page-container">
